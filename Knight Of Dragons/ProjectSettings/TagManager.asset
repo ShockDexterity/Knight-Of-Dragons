@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - Gate
+  - Enemy
+  - NoEnemy
+  - ProjPass
   layers:
   - Default
   - TransparentFX
@@ -12,10 +17,10 @@ TagManager:
   - Water
   - UI
   - 
-  - 
-  - 
-  - 
-  - 
+  - Enemies
+  - EnemyBarrier
+  - Player
+  - Walkers
   - 
   - 
   - 
@@ -40,4 +45,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1111312753
+    locked: 0
+  - name: Interactables
+    uniqueID: 3066895667
+    locked: 0
+  - name: Enemies
+    uniqueID: 1127976883
+    locked: 0
+  - name: Player
+    uniqueID: 4112135765
     locked: 0
