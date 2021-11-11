@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: b008e0a9505a4c24298f7c1cc9ab9c0d
+guid: 31958d6b32a64b04a96d8e28cdff1301
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3311017972120570427
-    second: frostBreathProjectile_0
+      213: -7624626844878330149
+    second: mageIdle_0
   - first:
-      213: 45933589585369428
-    second: frostBreathProjectile_1
+      213: -8454924070050484173
+    second: mageIdle_1
   - first:
-      213: 1519214880078768426
-    second: frostBreathProjectile_2
+      213: 2703777783119993409
+    second: mageIdle_2
   - first:
-      213: 2837998983675307696
-    second: frostBreathProjectile_3
+      213: 8167101488875927643
+    second: mageIdle_3
   - first:
-      213: 7144025892008206609
-    second: frostBreathProjectile_4
+      213: -3317956492277026735
+    second: mageIdle_4
+  - first:
+      213: 110727160449570809
+    second: mageIdle_5
+  - first:
+      213: 8124378822028777997
+    second: mageIdle_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -166,13 +172,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: frostBreathProjectile_0
+      name: mageIdle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 171
-        width: 26
-        height: 15
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3a4e299d4913fd20800000000000000
-      internalID: 3311017972120570427
+      spriteID: bd6ae161842ef2690800000000000000
+      internalID: -7624626844878330149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frostBreathProjectile_1
+      name: mageIdle_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 171
-        width: 26
-        height: 15
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,20 +207,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4599e7a3b5033a000800000000000000
-      internalID: 45933589585369428
+      spriteID: 330bdb9ba531aaa80800000000000000
+      internalID: -8454924070050484173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frostBreathProjectile_2
+      name: mageIdle_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ad57a819fb58520800000000000000
+      internalID: 2703777783119993409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mageIdle_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 107
-        width: 26
-        height: 15
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a29259062e5551510800000000000000
-      internalID: 1519214880078768426
+      spriteID: b587301788f575170800000000000000
+      internalID: 8167101488875927643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frostBreathProjectile_3
+      name: mageIdle_4
       rect:
         serializedVersion: 2
         x: 64
-        y: 107
-        width: 26
-        height: 15
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +270,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b6e2ee0a09926720800000000000000
-      internalID: 2837998983675307696
+      spriteID: 15070a9462044f1d0800000000000000
+      internalID: -3317956492277026735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frostBreathProjectile_4
+      name: mageIdle_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 43
-        width: 26
-        height: 15
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,8 +291,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 111a757b2bda42360800000000000000
-      internalID: 7144025892008206609
+      spriteID: 9f7959904c1698100800000000000000
+      internalID: 110727160449570809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mageIdle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a5bbb6e779fb070800000000000000
+      internalID: 8124378822028777997
       vertices: []
       indices: 
       edges: []

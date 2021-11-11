@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: b008e0a9505a4c24298f7c1cc9ab9c0d
+guid: 717670d9aedf3e4408f0e37c15a961a3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3311017972120570427
-    second: frostBreathProjectile_0
+      213: -4337481982405143786
+    second: spearmenIdle_0
   - first:
-      213: 45933589585369428
-    second: frostBreathProjectile_1
-  - first:
-      213: 1519214880078768426
-    second: frostBreathProjectile_2
-  - first:
-      213: 2837998983675307696
-    second: frostBreathProjectile_3
-  - first:
-      213: 7144025892008206609
-    second: frostBreathProjectile_4
+      213: -8748438773766285784
+    second: spearmenIdle_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -166,106 +157,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: frostBreathProjectile_0
+      name: spearmenIdle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 171
-        width: 26
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3a4e299d4913fd20800000000000000
-      internalID: 3311017972120570427
+      spriteID: 61395133e1b2ec3c0800000000000000
+      internalID: -4337481982405143786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frostBreathProjectile_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 171
-        width: 26
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4599e7a3b5033a000800000000000000
-      internalID: 45933589585369428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frostBreathProjectile_2
+      name: spearmenIdle_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 107
-        width: 26
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a29259062e5551510800000000000000
-      internalID: 1519214880078768426
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frostBreathProjectile_3
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 107
-        width: 26
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b6e2ee0a09926720800000000000000
-      internalID: 2837998983675307696
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frostBreathProjectile_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 43
-        width: 26
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 111a757b2bda42360800000000000000
-      internalID: 7144025892008206609
+      spriteID: 8261866594d479680800000000000000
+      internalID: -8748438773766285784
       vertices: []
       indices: 
       edges: []
