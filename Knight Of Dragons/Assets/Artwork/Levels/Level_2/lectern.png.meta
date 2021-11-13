@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 45ce18dd0f42a7d46bc17b0db872a1bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7614699872510176671
+    second: Lectern_and_Rune_Book_0
+  - first:
+      213: 9119119856861755630
+    second: Lectern_and_Rune_Book_1
+  - first:
+      213: -5715765011300464573
+    second: Lectern_and_Rune_Book_2
+  - first:
+      213: -2385878557167184216
+    second: Lectern_and_Rune_Book_3
+  - first:
+      213: -3454894232550008178
+    second: Lectern_and_Rune_Book_4
+  - first:
+      213: -655132212591525402
+    second: Lectern_and_Rune_Book_5
+  - first:
+      213: 4117385162529242624
+    second: Lectern_and_Rune_Book_6
+  - first:
+      213: -7698007289427096893
+    second: Lectern_and_Rune_Book_7
+  - first:
+      213: -8284196517442627373
+    second: Lectern_and_Rune_Book_8
+  - first:
+      213: -2440630011009509716
+    second: Lectern_and_Rune_Book_9
+  - first:
+      213: 7676870095203257954
+    second: Lectern_and_Rune_Book_10
+  - first:
+      213: -5707500352433065013
+    second: Lectern_and_Rune_Book_11
+  - first:
+      213: -8301195785990847811
+    second: Lectern_and_Rune_Book_12
+  - first:
+      213: 4775116479868012067
+    second: Lectern_and_Rune_Book_13
+  - first:
+      213: 6318204902401684544
+    second: Lectern_and_Rune_Book_14
+  - first:
+      213: 4115831646457580404
+    second: Lectern_and_Rune_Book_15
+  - first:
+      213: -632654168644085769
+    second: Lectern_and_Rune_Book_16
+  - first:
+      213: 5981852847958314192
+    second: Lectern_and_Rune_Book_17
+  - first:
+      213: -2844859699726377635
+    second: Lectern_and_Rune_Book_18
+  - first:
+      213: 7063930933385435229
+    second: Lectern_and_Rune_Book_19
+  - first:
+      213: 4779509066904692254
+    second: Lectern_and_Rune_Book_20
+  - first:
+      213: 3551356749188080277
+    second: Lectern_and_Rune_Book_21
+  - first:
+      213: -5979121261242134417
+    second: Lectern_and_Rune_Book_22
+  - first:
+      213: 187508638029191092
+    second: Lectern_and_Rune_Book_23
+  - first:
+      213: 7787411360204635813
+    second: Lectern_and_Rune_Book_24
+  - first:
+      213: 5041441758452673725
+    second: Lectern_and_Rune_Book_25
+  - first:
+      213: 7687487768431290886
+    second: Lectern_and_Rune_Book_26
+  - first:
+      213: 3240419569447999502
+    second: Lectern_and_Rune_Book_27
+  - first:
+      213: 8597623608662593670
+    second: Lectern_and_Rune_Book_28
+  - first:
+      213: -504694428683446798
+    second: Lectern_and_Rune_Book_29
+  - first:
+      213: -631218443785346444
+    second: Lectern_and_Rune_Book_30
+  - first:
+      213: -200086119036957669
+    second: Lectern_and_Rune_Book_31
+  - first:
+      213: 8366250373724197155
+    second: Lectern_and_Rune_Book_32
+  - first:
+      213: -7142080723802502607
+    second: Lectern_and_Rune_Book_33
+  - first:
+      213: -5718992406327945312
+    second: Lectern_and_Rune_Book_34
+  - first:
+      213: 2153400762802885164
+    second: lectern_0
+  - first:
+      213: -3881559600737857242
+    second: lectern_1
+  - first:
+      213: 4903866930522254904
+    second: lectern_2
+  - first:
+      213: 3212210840362197453
+    second: lectern_3
+  - first:
+      213: 8333241228219557027
+    second: lectern_4
+  - first:
+      213: -1215785411930947025
+    second: lectern_5
+  - first:
+      213: 8929038242047979292
+    second: lectern_6
+  - first:
+      213: -806116007346328196
+    second: lectern_7
+  - first:
+      213: -8907713244294935509
+    second: lectern_8
+  - first:
+      213: -2058738887792125228
+    second: lectern_9
+  - first:
+      213: 369267022375112117
+    second: lectern_10
+  - first:
+      213: -8549237676841936629
+    second: lectern_11
+  - first:
+      213: -9102339016221044926
+    second: lectern_12
+  - first:
+      213: 8063670150205797266
+    second: lectern_13
+  - first:
+      213: -9124740899960912271
+    second: lectern_14
+  - first:
+      213: -7297817515001553836
+    second: lectern_15
+  - first:
+      213: 884552935024310817
+    second: lectern_16
+  - first:
+      213: -1297807408329682345
+    second: lectern_17
+  - first:
+      213: 3606802913265954097
+    second: lectern_18
+  - first:
+      213: 7615823325786150897
+    second: lectern_19
+  - first:
+      213: 3849615497331063405
+    second: lectern_20
+  - first:
+      213: -1163668217470210037
+    second: lectern_21
+  - first:
+      213: -8365299298331972285
+    second: lectern_22
+  - first:
+      213: 4130060260935516118
+    second: lectern_23
+  - first:
+      213: -3402326305974195304
+    second: lectern_24
+  - first:
+      213: 6186834519254087646
+    second: lectern_25
+  - first:
+      213: 4792500574267290021
+    second: lectern_26
+  - first:
+      213: -8560386036031861479
+    second: lectern_27
+  - first:
+      213: -1239489762373917995
+    second: lectern_28
+  - first:
+      213: -7587195326388757655
+    second: lectern_29
+  - first:
+      213: 493282024536312879
+    second: lectern_30
+  - first:
+      213: -4735874821660157632
+    second: lectern_31
+  - first:
+      213: 8274626782206133984
+    second: lectern_32
+  - first:
+      213: -5180741433239564366
+    second: lectern_33
+  - first:
+      213: -1288959072748259649
+    second: lectern_34
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lectern_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 320
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22dbe5a59a62ed10800000000000000
+      internalID: 2153400762802885164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 320
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6215387cb1ee12ac0800000000000000
+      internalID: -3881559600737857242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 320
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e6093ddf80e0440800000000000000
+      internalID: 4903866930522254904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_3
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 320
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1a2738db0149c20800000000000000
+      internalID: 3212210840362197453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_4
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 320
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4aaa3eebe95a370800000000000000
+      internalID: 8333241228219557027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_5
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 320
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2201cefb99a02fe0800000000000000
+      internalID: -1215785411930947025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_6
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 256
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1fe52b19f05aeb70800000000000000
+      internalID: 8929038242047979292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_7
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 256
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7dad5623c910d4f0800000000000000
+      internalID: -806116007346328196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_8
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 256
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c02c8dff1716480800000000000000
+      internalID: -8907713244294935509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_9
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 256
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da1ed3a3e3ed63e0800000000000000
+      internalID: -2058738887792125228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_10
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 256
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd4fef7666ef1500800000000000000
+      internalID: 369267022375112117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_11
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 256
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b095373f0a10b5980800000000000000
+      internalID: -8549237676841936629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_12
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 192
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f47f814eefda180800000000000000
+      internalID: -9102339016221044926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_13
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 192
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293ffe84749e7ef60800000000000000
+      internalID: 8063670150205797266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_14
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 192
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1760a561f786e5180800000000000000
+      internalID: -9124740899960912271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_15
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 192
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c55b6b2a1f8ba90800000000000000
+      internalID: -7297817515001553836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_16
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 192
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a37253530964c00800000000000000
+      internalID: 884552935024310817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_17
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 192
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75293a7c9034dfde0800000000000000
+      internalID: -1297807408329682345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_18
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 128
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13daf04d320fd0230800000000000000
+      internalID: 3606802913265954097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_19
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 128
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f71e95e6f6d0b960800000000000000
+      internalID: 7615823325786150897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_20
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 128
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ab14016e49c6530800000000000000
+      internalID: 3849615497331063405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_21
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 128
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00b64debe1d9dfe0800000000000000
+      internalID: -1163668217470210037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_22
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 128
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d29130c9c78eb80800000000000000
+      internalID: -8365299298331972285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_23
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 128
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfb402ecebe05930800000000000000
+      internalID: 4130060260935516118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_24
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 64
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89be072404288c0d0800000000000000
+      internalID: -3402326305974195304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_25
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 64
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7b34c473d0cd550800000000000000
+      internalID: 6186834519254087646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_26
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 64
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1be0b61e1628240800000000000000
+      internalID: 4792500574267290021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_27
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 64
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d4b1e4146633980800000000000000
+      internalID: -8560386036031861479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_28
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 64
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d228f2d0a27ccee0800000000000000
+      internalID: -1239489762373917995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_29
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 64
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b1811ac0ed4b690800000000000000
+      internalID: -7587195326388757655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_30
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c8296436d78d600800000000000000
+      internalID: 493282024536312879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_31
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049da3201fac64eb0800000000000000
+      internalID: -4735874821660157632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_32
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 0
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e68452b73165d270800000000000000
+      internalID: 8274626782206133984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_33
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 0
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf8b9e7d1f4a18b0800000000000000
+      internalID: -5180741433239564366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lectern_34
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 0
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6b2d27d82bc1ee0800000000000000
+      internalID: -1288959072748259649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

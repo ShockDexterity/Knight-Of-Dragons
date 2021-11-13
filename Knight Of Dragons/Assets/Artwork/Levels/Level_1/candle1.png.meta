@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: 27c233d898c79b6469c9fe7af4923f64
+guid: 89b3a1eaa0e0afa4a93e2b7b612494d1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3367352193978170840
-    second: mageWalking_0
+      213: 3787176690162827797
+    second: candle1_0
   - first:
-      213: 7364514292817621441
-    second: mageWalking_1
+      213: 144123969599215423
+    second: candle1_1
   - first:
-      213: 9006642756453900360
-    second: mageWalking_2
+      213: -3820850158268129457
+    second: candle1_2
   - first:
-      213: 7594198312771246103
-    second: mageWalking_3
+      213: 4628881571983596361
+    second: candle1_3
   - first:
-      213: -227450600702869253
-    second: mageWalking_4
-  - first:
-      213: 4753494729184613381
-    second: mageWalking_5
+      213: -7271337746181106588
+    second: candle1_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -105,191 +102,110 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Lumin
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mageWalking_0
+      name: candle1_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 17
+        y: 128
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5128bc66221ce8430800000000000000
+      internalID: 3787176690162827797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle1_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 128
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37949b9cf7000200800000000000000
+      internalID: 144123969599215423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle1_2
+      rect:
+        serializedVersion: 2
+        x: 17
         y: 64
-        width: 48
-        height: 64
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8228c444503c441d0800000000000000
-      internalID: -3367352193978170840
+      spriteID: f4fde68560d99fac0800000000000000
+      internalID: -3820850158268129457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mageWalking_1
+      name: candle1_3
       rect:
         serializedVersion: 2
-        x: 72
+        x: 81
         y: 64
-        width: 48
-        height: 64
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c17eaefab2043660800000000000000
-      internalID: 7364514292817621441
+      spriteID: 94b1f6dc3471d3040800000000000000
+      internalID: 4628881571983596361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mageWalking_2
+      name: candle1_4
       rect:
         serializedVersion: 2
-        x: 136
-        y: 64
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 840a7452ed50efc70800000000000000
-      internalID: 9006642756453900360
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mageWalking_3
-      rect:
-        serializedVersion: 2
-        x: 8
+        x: 17
         y: 0
-        width: 48
-        height: 64
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 718d9923123046960800000000000000
-      internalID: 7594198312771246103
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mageWalking_4
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 0
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf0082d32eee7dcf0800000000000000
-      internalID: -227450600702869253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mageWalking_5
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 0
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5049db6654ec7f140800000000000000
-      internalID: 4753494729184613381
+      spriteID: 4645cf458d4071b90800000000000000
+      internalID: -7271337746181106588
       vertices: []
       indices: 
       edges: []

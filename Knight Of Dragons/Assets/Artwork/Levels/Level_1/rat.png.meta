@@ -1,31 +1,55 @@
 fileFormatVersion: 2
-guid: 4f8a82846733e73408b2f0968f7c998c
+guid: 0f71eac85ce61a24589aceecb246e4ab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -770512929034625366
-    second: spearmenRunning_0
+      213: 3032124068683660531
+    second: Rat_Design_WalkingAnimation_Sprite_Sheet_0
   - first:
-      213: 7541201599401144432
-    second: spearmenRunning_1
+      213: 5593858624405214813
+    second: Rat_Design_WalkingAnimation_Sprite_Sheet_1
   - first:
-      213: 940197878181492809
-    second: spearmenRunning_2
+      213: 354297556244444474
+    second: Rat_Design_WalkingAnimation_Sprite_Sheet_2
   - first:
-      213: 3066358888706137314
-    second: spearmenRunning_3
+      213: 5534211445725496629
+    second: Rat_Design_WalkingAnimation_Sprite_Sheet_3
   - first:
-      213: -8048326620728928541
-    second: spearmenRunning_4
+      213: 4342500998531530547
+    second: Rat_Design_WalkingAnimation_Sprite_Sheet_4
   - first:
-      213: 7010257345460248107
-    second: spearmenRunning_5
+      213: -2033157710962347294
+    second: Rat_Design_WalkingAnimation_Sprite_Sheet_5
   - first:
-      213: -6087344216746444824
-    second: spearmenRunning_6
+      213: 7372888787412693856
+    second: Rat_Design_WalkingAnimation_Sprite_Sheet_6
   - first:
-      213: -6277197603475330459
-    second: spearmenRunning_7
+      213: 2518069775386881437
+    second: Rat_Design_WalkingAnimation_Sprite_Sheet_7
+  - first:
+      213: -5237074582503671387
+    second: rat_0
+  - first:
+      213: -1962871195434815468
+    second: rat_1
+  - first:
+      213: 6665371358829242843
+    second: rat_2
+  - first:
+      213: -513956825706076816
+    second: rat_3
+  - first:
+      213: -8905257789077479170
+    second: rat_4
+  - first:
+      213: -6745645932972450358
+    second: rat_5
+  - first:
+      213: 8711110521761442959
+    second: rat_6
+  - first:
+      213: -6765687925566922741
+    second: rat_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,233 +135,173 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Lumin
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spearmenRunning_0
+      name: rat_0
       rect:
         serializedVersion: 2
         x: 0
         y: 128
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aae9b0ac2969e45f0800000000000000
-      internalID: -770512929034625366
+      spriteID: 5a934a71a6c2257b0800000000000000
+      internalID: -5237074582503671387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spearmenRunning_1
+      name: rat_1
       rect:
         serializedVersion: 2
         x: 64
         y: 128
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 070b9ef46eab7a860800000000000000
-      internalID: 7541201599401144432
+      spriteID: 410f2482c0b72c4e0800000000000000
+      internalID: -1962871195434815468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spearmenRunning_2
+      name: rat_2
       rect:
         serializedVersion: 2
         x: 128
         y: 128
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94875932df04c0d00800000000000000
-      internalID: 940197878181492809
+      spriteID: bd9641bafe7208c50800000000000000
+      internalID: 6665371358829242843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spearmenRunning_3
+      name: rat_3
       rect:
         serializedVersion: 2
         x: 0
         y: 64
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ecd03bb925ed8a20800000000000000
-      internalID: 3066358888706137314
+      spriteID: 075e6e57dfe0ed8f0800000000000000
+      internalID: -513956825706076816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spearmenRunning_4
+      name: rat_4
       rect:
         serializedVersion: 2
         x: 64
         y: 64
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e6d12f84999e4090800000000000000
-      internalID: -8048326620728928541
+      spriteID: ef0a1c0193b2a6480800000000000000
+      internalID: -8905257789077479170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spearmenRunning_5
+      name: rat_5
       rect:
         serializedVersion: 2
         x: 128
         y: 64
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2e1b3ce9ef694160800000000000000
-      internalID: 7010257345460248107
+      spriteID: acd5e9093c6a262a0800000000000000
+      internalID: -6745645932972450358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spearmenRunning_6
+      name: rat_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e7bc4fdfa8658ba0800000000000000
-      internalID: -6087344216746444824
+      spriteID: f8c22c8bdd414e870800000000000000
+      internalID: 8711110521761442959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spearmenRunning_7
+      name: rat_7
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56a6be3a90ae2e8a0800000000000000
-      internalID: -6277197603475330459
+      spriteID: b002f678da27b12a0800000000000000
+      internalID: -6765687925566922741
       vertices: []
       indices: 
       edges: []

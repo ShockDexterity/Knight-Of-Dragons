@@ -26,6 +26,30 @@ TextureImporter:
   - first:
       213: 8197340207014074564
     second: knightRunning_7
+  - first:
+      213: 5668577260481778385
+    second: knightWalking_0
+  - first:
+      213: 908150560953170063
+    second: knightWalking_1
+  - first:
+      213: -6775892948336891243
+    second: knightWalking_2
+  - first:
+      213: 3820003737717694506
+    second: knightWalking_3
+  - first:
+      213: -2499449601486970329
+    second: knightWalking_4
+  - first:
+      213: -2036838023304864681
+    second: knightWalking_5
+  - first:
+      213: 8173087467411420695
+    second: knightWalking_6
+  - first:
+      213: -8081955955949707
+    second: knightWalking_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -175,7 +199,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: knightRunning_0
+      name: knightWalking_0
       rect:
         serializedVersion: 2
         x: 0
@@ -189,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66ceb2e51b4509670800000000000000
-      internalID: 8543421613887712358
+      spriteID: 1d29fd82cf4daae40800000000000000
+      internalID: 5668577260481778385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightRunning_1
+      name: knightWalking_1
       rect:
         serializedVersion: 2
         x: 64
@@ -210,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4647640e60d498b30800000000000000
-      internalID: 4290044811974964324
+      spriteID: f887f24af166a9c00800000000000000
+      internalID: 908150560953170063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightRunning_2
+      name: knightWalking_2
       rect:
         serializedVersion: 2
         x: 128
@@ -231,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a7aae01ce8276650800000000000000
-      internalID: 6225990004224206761
+      spriteID: 59a2e42834137f1a0800000000000000
+      internalID: -6775892948336891243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightRunning_3
+      name: knightWalking_3
       rect:
         serializedVersion: 2
         x: 0
@@ -252,14 +276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d39ed224e4b3c23d0800000000000000
-      internalID: -3230141625427695299
+      spriteID: a20e3530921630530800000000000000
+      internalID: 3820003737717694506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightRunning_4
+      name: knightWalking_4
       rect:
         serializedVersion: 2
         x: 64
@@ -273,14 +297,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 107af50dc20f11a80800000000000000
-      internalID: -8497746946606258431
+      spriteID: 722a06184db205dd0800000000000000
+      internalID: -2499449601486970329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightRunning_5
+      name: knightWalking_5
       rect:
         serializedVersion: 2
         x: 128
@@ -294,14 +318,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abf1d92ffe885baa0800000000000000
-      internalID: -6145855552328228934
+      spriteID: 75c97e30c92bbb3e0800000000000000
+      internalID: -2036838023304864681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightRunning_6
+      name: knightWalking_6
       rect:
         serializedVersion: 2
         x: 0
@@ -315,14 +339,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d7314d6e902f0dd0800000000000000
-      internalID: -2517757801866905648
+      spriteID: 716314dafb3ac6170800000000000000
+      internalID: 8173087467411420695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightRunning_7
+      name: knightWalking_7
       rect:
         serializedVersion: 2
         x: 64
@@ -336,8 +360,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c8d916ac7dc2c170800000000000000
-      internalID: 8197340207014074564
+      spriteID: 57fb72ef08943eff0800000000000000
+      internalID: -8081955955949707
       vertices: []
       indices: 
       edges: []

@@ -1,25 +1,55 @@
 fileFormatVersion: 2
-guid: 27c233d898c79b6469c9fe7af4923f64
+guid: 4f8a82846733e73408b2f0968f7c998c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3367352193978170840
-    second: mageWalking_0
+      213: -770512929034625366
+    second: spearmenRunning_0
   - first:
-      213: 7364514292817621441
-    second: mageWalking_1
+      213: 7541201599401144432
+    second: spearmenRunning_1
   - first:
-      213: 9006642756453900360
-    second: mageWalking_2
+      213: 940197878181492809
+    second: spearmenRunning_2
   - first:
-      213: 7594198312771246103
-    second: mageWalking_3
+      213: 3066358888706137314
+    second: spearmenRunning_3
   - first:
-      213: -227450600702869253
-    second: mageWalking_4
+      213: -8048326620728928541
+    second: spearmenRunning_4
   - first:
-      213: 4753494729184613381
-    second: mageWalking_5
+      213: 7010257345460248107
+    second: spearmenRunning_5
+  - first:
+      213: -6087344216746444824
+    second: spearmenRunning_6
+  - first:
+      213: -6277197603475330459
+    second: spearmenRunning_7
+  - first:
+      213: -1715690152495831977
+    second: spearmenWalking_0
+  - first:
+      213: -2131034646598857510
+    second: spearmenWalking_1
+  - first:
+      213: 1849312265122614081
+    second: spearmenWalking_2
+  - first:
+      213: -4500780782234402868
+    second: spearmenWalking_3
+  - first:
+      213: 1499228661250619879
+    second: spearmenWalking_4
+  - first:
+      213: -6111851630259139702
+    second: spearmenWalking_5
+  - first:
+      213: 5909607744200897946
+    second: spearmenWalking_6
+  - first:
+      213: -6951362687428129931
+    second: spearmenWalking_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -169,127 +199,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mageWalking_0
+      name: spearmenWalking_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754a9db75e4a038e0800000000000000
+      internalID: -1715690152495831977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spearmenWalking_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adccc65974b0d62e0800000000000000
+      internalID: -2131034646598857510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spearmenWalking_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b086105b31aa910800000000000000
+      internalID: 1849312265122614081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spearmenWalking_3
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 64
-        width: 48
+        width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8228c444503c441d0800000000000000
-      internalID: -3367352193978170840
+      spriteID: ccf730789b30a81c0800000000000000
+      internalID: -4500780782234402868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mageWalking_1
+      name: spearmenWalking_4
       rect:
         serializedVersion: 2
-        x: 72
+        x: 64
         y: 64
-        width: 48
+        width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c17eaefab2043660800000000000000
-      internalID: 7364514292817621441
+      spriteID: 7e97dee26845ec410800000000000000
+      internalID: 1499228661250619879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mageWalking_2
+      name: spearmenWalking_5
       rect:
         serializedVersion: 2
-        x: 136
+        x: 128
         y: 64
-        width: 48
+        width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 840a7452ed50efc70800000000000000
-      internalID: 9006642756453900360
+      spriteID: a8b038203575e2ba0800000000000000
+      internalID: -6111851630259139702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mageWalking_3
+      name: spearmenWalking_6
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 0
-        width: 48
+        width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 718d9923123046960800000000000000
-      internalID: 7594198312771246103
+      spriteID: a95fdf2dee4230250800000000000000
+      internalID: 5909607744200897946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mageWalking_4
+      name: spearmenWalking_7
       rect:
         serializedVersion: 2
-        x: 72
+        x: 64
         y: 0
-        width: 48
+        width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf0082d32eee7dcf0800000000000000
-      internalID: -227450600702869253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mageWalking_5
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 0
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5049db6654ec7f140800000000000000
-      internalID: 4753494729184613381
+      spriteID: 57b01f6377cc78f90800000000000000
+      internalID: -6951362687428129931
       vertices: []
       indices: 
       edges: []
