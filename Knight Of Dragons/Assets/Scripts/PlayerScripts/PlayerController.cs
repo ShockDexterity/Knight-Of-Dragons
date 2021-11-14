@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
                 jumping = true;
                 inJumpDelay = true;
                 animator.SetTrigger("Jumped");
-                // this.GetComponent<PlayerBlock>().enabled = false;
+                this.GetComponent<PlayerBlock>().enabled = false;
             }
         }
         if (inJumpDelay)
@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour
                 jumping = false;
                 canJump = true;
                 animator.SetTrigger("Landed");
-                // this.GetComponent<PlayerBlock>().enabled = true;
+                this.GetComponent<PlayerBlock>().enabled = true;
             }
             else if (!canJump) { canJump = true; }
         }

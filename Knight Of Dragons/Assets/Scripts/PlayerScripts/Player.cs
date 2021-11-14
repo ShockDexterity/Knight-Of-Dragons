@@ -87,11 +87,11 @@ public class Player : MonoBehaviour
         timeOfDeath = Time.time;
         alive = false;
 
-        // this.GetComponent<PlayerBlock>().enabled = false;
-        // this.GetComponent<PlayerController>().enabled = false;
-        // this.GetComponent<PlayerMelee>().enabled = false;
-        // this.GetComponent<PlayerFireBreath>().enabled = false;
-        // this.GetComponent<PlayerFrostAttack>().enabled = false;
+        this.GetComponent<PlayerBlock>().enabled = false;
+        this.GetComponent<PlayerController>().enabled = false;
+        this.GetComponent<PlayerMelee>().enabled = false;
+        this.GetComponent<PlayerFireBreath>().enabled = false;
+        this.GetComponent<PlayerFrostBreath>().enabled = false;
 
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in enemies) { Destroy(enemy); }
@@ -104,10 +104,10 @@ public class Player : MonoBehaviour
         timeOfHijack = Time.time;
         hijacked = true;
 
-        // this.GetComponent<PlayerBlock>().enabled = false;
-        // this.GetComponent<PlayerController>().enabled = false;
-        // this.GetComponent<PlayerMelee>().enabled = false;
-        // this.GetComponent<PlayerFireBreath>().enabled = false;
-        // this.GetComponent<PlayerFrostAttack>().enabled = false;
+        this.GetComponent<PlayerBlock>().enabled = false;
+        this.GetComponent<PlayerController>().enabled = false;
+        this.GetComponent<PlayerMelee>().enabled = false;
+        this.GetComponent<PlayerFireBreath>().enabled = false;
+        this.GetComponent<PlayerFrostBreath>().enabled = false;
     }
 }//end class Player
