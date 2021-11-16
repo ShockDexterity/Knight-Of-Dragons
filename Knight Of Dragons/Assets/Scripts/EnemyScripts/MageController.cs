@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArcherController : MonoBehaviour
+public class MageController : MonoBehaviour
 {
     public GameObject player;
     private float playerX;
     private float playerY;
-    private float archerX;
-    private float archerY;
+    private float mageX;
+    private float mageY;
 
     public Rigidbody2D physics;
     public Animator animator;
@@ -21,20 +21,16 @@ public class ArcherController : MonoBehaviour
     private bool seesPlayer;
     private int dirX;
 
-    private float attackRate;
+    public float attackRate;
     private float nextAttack;
-
     public GameObject attackPrefab;
     public Transform attackPoint;
-    private bool inAttack;
-    private float timeFired;
-    private float attackDelay;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        if (physics == null) { physics = this.GetComponent<Rigidbody2D>(); }
+        if (physics = null) { physics = this.GetComponent<Rigidbody2D>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
 
         vel = new Vector2(1f, 0);
@@ -42,22 +38,22 @@ public class ArcherController : MonoBehaviour
         moveCounter = 0f;
         seesPlayer = false;
         attackRate = 2f;
-        inAttack = false;
-        attackDelay = 12f / 11f;
     }//end Start()
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        // While the mage doesn't see the player
         if (!seesPlayer)
         {
+            // Update movement
             if (moveCounter > moveRate)
             {
                 ChangeDirection();
                 moveCounter = 0f;
             }
 
-            physics.velocity = new Vector2(vel.x * dirX, physics.velocity.y);
+            physics.velocity = vel * dirX;
 
             moveCounter += Time.fixedDeltaTime;
 
@@ -71,15 +67,11 @@ public class ArcherController : MonoBehaviour
             if (Time.time > nextAttack)
             {
                 animator.SetTrigger("Attacking");
-                nextAttack = Time.time + attackRate;
-                timeFired = Time.time;
-                inAttack = true;
-            }
-            if (inAttack && Time.time > timeFired + attackDelay)
-            {
-                inAttack = false;
-                GameObject arrow = Instantiate(attackPrefab, attackPoint.position, Quaternion.identity);
-                arrow.GetComponent<Arrow>().Fire();
+                this.nextAttack = Time.time + this.attackRate;
+
+                GameObject projectile = Instantiate(attackPrefab, attackPoint.position, Quaternion.identity);
+
+                projectile.GetComponent<Projectile>().Fire(facingLeft, 'm');
             }
         }
     }//end Update()
@@ -115,19 +107,19 @@ public class ArcherController : MonoBehaviour
         playerX = player.transform.position.x;
         playerY = player.transform.position.y;
 
-        archerX = this.transform.position.x;
-        archerY = this.transform.position.y;
+        mageX = this.transform.position.x;
+        mageY = this.transform.position.y;
 
-        if (Mathf.Abs(playerY - archerY) < 2f)
+        if (Mathf.Abs(playerY - mageY) < 2f)
         {
-            if (!facingLeft && playerX > archerX)
+            if (!facingLeft && playerX > mageX)
             {
-                if (playerX - archerX <= 5f) { seesPlayer = true; }
+                if (playerX - mageX <= 5f) { seesPlayer = true; }
                 return;
             }
-            else if (facingLeft && playerX < archerX)
+            else if (facingLeft && playerX < mageX)
             {
-                if (playerX + 5f > archerX) { seesPlayer = true; }
+                if (playerX + 5f > mageX) { seesPlayer = true; }
                 return;
             }
         }
@@ -135,19 +127,19 @@ public class ArcherController : MonoBehaviour
 
     private void SeekPlayer()
     {
-        if (!animator.GetBool("Idle")) { animator.SetBool("Idle", true); }
+        if (!animator.GetBool("Idle")) { animator.SetBool("Idle", idle); }
         playerX = player.transform.position.x;
-        archerX = this.transform.position.x;
+        mageX = this.transform.position.x;
 
-        if (playerX > archerX)
+        if (playerX > mageX)
         {
             this.transform.localScale = new Vector3(-1, 1, 1);
             this.facingLeft = false;
         }
-        else if (playerX < archerX)
+        else if (playerX < mageX)
         {
             this.transform.localScale = new Vector3(1, 1, 1);
             this.facingLeft = true;
         }
     }//end SeekPlayer()
-}//end class ArcherController
+}//end class MageController

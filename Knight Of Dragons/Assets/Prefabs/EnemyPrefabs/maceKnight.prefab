@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 2551679063345776855}
   - component: {fileID: 2551679063345776852}
   - component: {fileID: 2551679063345776853}
+  - component: {fileID: 6602374925345999176}
+  - component: {fileID: 4281604771823730976}
+  - component: {fileID: 4096882422000184358}
   m_Layer: 7
   m_Name: maceKnight
   m_TagString: Enemy
@@ -153,6 +156,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.44, y: 0.74975455}
   m_EdgeRadius: 0
+--- !u!114 &6602374925345999176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2551679063345776848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eeeb9524f3d938419accaa92ed4bba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coin: {fileID: 7454224706298002217, guid: eef8c1e7a3cdf4d45ac7a72924648f29, type: 3}
+  animator: {fileID: 2551679063345776855}
+  spriteRenderer: {fileID: 2551679063345776849}
+  coinSpawnPoint: {x: 0, y: 0, z: 0}
+--- !u!114 &4281604771823730976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2551679063345776848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c30463a801461df47b258b868b2136f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2551679063345776855}
+  maceController: {fileID: 4096882422000184358}
+  attackPoint: {fileID: 2551679064487091644}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  attackRange: 0.5
+--- !u!114 &4096882422000184358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2551679063345776848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 340bd12b5a566874e844cf38c0f0475c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  physics: {fileID: 2551679063345776852}
+  animator: {fileID: 2551679063345776855}
+  maceAttack: {fileID: 4281604771823730976}
+  attackRate: 0
 --- !u!1 &2551679064424868107
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,7 +279,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2551679064487091647}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.382, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2551679063345776854}

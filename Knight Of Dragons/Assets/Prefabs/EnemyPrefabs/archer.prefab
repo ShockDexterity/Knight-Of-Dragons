@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 8986213089048827212}
   - component: {fileID: 8986213089048827214}
   - component: {fileID: 8986213089048827213}
+  - component: {fileID: 404261355123401672}
+  - component: {fileID: 6023893626483387845}
   m_Layer: 7
   m_Name: archer
   m_TagString: Enemy
@@ -153,6 +155,39 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.75}
   m_EdgeRadius: 0
+--- !u!114 &404261355123401672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8986213089048827209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eeeb9524f3d938419accaa92ed4bba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coin: {fileID: 7454224706298002217, guid: eef8c1e7a3cdf4d45ac7a72924648f29, type: 3}
+  animator: {fileID: 8986213089048827212}
+  spriteRenderer: {fileID: 8986213089048827210}
+  coinSpawnPoint: {x: 0, y: 0, z: 0}
+--- !u!114 &6023893626483387845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8986213089048827209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 763666e132e152d409358406736252ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  physics: {fileID: 8986213089048827214}
+  animator: {fileID: 8986213089048827212}
+  attackPrefab: {fileID: 0}
+  attackPoint: {fileID: 8986213090764465552}
 --- !u!1 &8986213090292531244
 GameObject:
   m_ObjectHideFlags: 0

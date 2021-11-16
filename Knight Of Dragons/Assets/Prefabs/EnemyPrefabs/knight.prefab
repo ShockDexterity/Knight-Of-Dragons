@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eeeb9524f3d938419accaa92ed4bba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: {fileID: 0}
+  coin: {fileID: 7454224706298002217, guid: eef8c1e7a3cdf4d45ac7a72924648f29, type: 3}
   animator: {fileID: 2703832032988156356}
   spriteRenderer: {fileID: 2703832032988156358}
   coinSpawnPoint: {x: 0, y: 0, z: 0}
@@ -220,7 +220,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 512
-  attackRange: 0
+  attackRange: 0.5
 --- !u!114 &3224027859433871946
 MonoBehaviour:
   m_ObjectHideFlags: 0

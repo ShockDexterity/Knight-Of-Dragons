@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 5165669508410725208}
   - component: {fileID: 5165669508410725210}
   - component: {fileID: 5165669508410725209}
+  - component: {fileID: 3220284232612651714}
+  - component: {fileID: 487341420311905559}
   m_Layer: 7
   m_Name: mage
   m_TagString: Enemy
@@ -153,6 +155,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.75, y: 0.79915166}
   m_EdgeRadius: 0
+--- !u!114 &3220284232612651714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5165669508410725189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eeeb9524f3d938419accaa92ed4bba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coin: {fileID: 7454224706298002217, guid: eef8c1e7a3cdf4d45ac7a72924648f29, type: 3}
+  animator: {fileID: 5165669508410725208}
+  spriteRenderer: {fileID: 5165669508410725190}
+  coinSpawnPoint: {x: 0, y: 0, z: 0}
+--- !u!114 &487341420311905559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5165669508410725189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751df9b796417af41a913fcf8df683dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  physics: {fileID: 5165669508410725210}
+  animator: {fileID: 5165669508410725208}
+  attackRate: 0
+  attackPrefab: {fileID: 0}
+  attackPoint: {fileID: 5165669510114371848}
 --- !u!1 &5165669509953801226
 GameObject:
   m_ObjectHideFlags: 0
