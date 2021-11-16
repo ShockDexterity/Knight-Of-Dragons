@@ -30,9 +30,9 @@ public class PlayerMelee : MonoBehaviour
     }//end Start()
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (!animator.GetBool("Jumping") && Input.GetMouseButtonDown(0) && (Time.time >= nextAttack))
+        if (!animator.GetBool("Jumped") && Input.GetMouseButtonDown(0) && (Time.time >= nextAttack))
         {
             nextAttack = Time.time + attackRate;
             // audioSource.Play();
@@ -43,7 +43,7 @@ public class PlayerMelee : MonoBehaviour
         {
             playerController.enabled = true;
         }
-    }//end Update()
+    }//end FixedUpdate()
 
     private void Attack()
     {

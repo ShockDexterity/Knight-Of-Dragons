@@ -54,9 +54,9 @@ public class Enemy : MonoBehaviour
         if (!alive)
         {
             if (id == 0) { this.GetComponent<ArcherController>().enabled = false; }
-            // else if (id == 1) { this.GetComponent<MageController>().enabled = false; }
-            // else if (id == 2) { this.GetComponent<MaceController>().enabled = false; }
-            // else if (id == 3) { this.GetComponent<SpearmenController>().enabled = false; }
+            else if (id == 1) { this.GetComponent<MageController>().enabled = false; }
+            else if (id == 2) { this.GetComponent<MaceController>().enabled = false; }
+            else if (id == 3) { this.GetComponent<SpearmenController>().enabled = false; }
             else if (id == 4) { this.GetComponent<KnightController>().enabled = false; }
 
             if (Time.time > (deathTime + deathDelay))
@@ -78,7 +78,7 @@ public class Enemy : MonoBehaviour
             alive = false;
             deathTime = timeHurt;
             if (!lootDropped) { DropLoot(); }
-            animator.SetTrigger("Dead");
+            animator.SetTrigger("Died");
             if (scene.name == "Level_3")
             {
                 var r = Random.Range(0, 5);

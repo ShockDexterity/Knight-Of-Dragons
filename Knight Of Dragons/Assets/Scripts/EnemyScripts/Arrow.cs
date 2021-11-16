@@ -8,7 +8,9 @@ public class Arrow : MonoBehaviour
     private Vector3 initialPosition;
     private int damage;
 
-    private float speed;
+    public float arcHeight;
+
+    public float speed;
 
     private float timeFired;
 
@@ -17,16 +19,30 @@ public class Arrow : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>().position;
         damage = 1;
-
-        speed = 3f;
     }//end Start()
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Time.time >= timeFired + 2f) { Destroy(this.gameObject); }
-        this.transform.position = Vector2.MoveTowards(this.transform.position, player, speed * Time.fixedDeltaTime);
+        var x0 = initialPosition.x;
+        var x1 = player.x;
+        var dis = x1 - x0;
+        var nextX = Mathf.MoveTowards(this.transform.position.x, x1, speed * Time.fixedDeltaTime);
+        var baseY = Mathf.Lerp(initialPosition.y, player.y, (nextX - x0) / dis);
+        var arc = arcHeight * (nextX - x0) * (nextX - x1) / (-0.25f * dis * dis);
+
+        var nextPos = new Vector3(nextX, baseY + arc, this.transform.position.z);
+
+        this.transform.rotation = LookAt2D(nextPos - transform.position);
+        transform.position = nextPos;
+
+        if (nextPos == player) { Destroy(this.gameObject); }
     }//end FixedUpdate()
+
+    static Quaternion LookAt2D(Vector3 forward)
+    {
+        return Quaternion.Euler(0, 0, Mathf.Atan2(forward.y, forward.x) * Mathf.Rad2Deg);
+    }
 
     public void Fire()
     {
@@ -44,8 +60,9 @@ public class Arrow : MonoBehaviour
             case "Enemy": break;
 
             case "Player":
-                Player player = collision.gameObject.GetComponent<Player>();
+                var player = collision.gameObject.GetComponent<Player>();
                 if (player != null) { player.TakeDamage(damage); }
+                Debug.Log("Damage");
                 Destroy(this.gameObject);
                 break;
 

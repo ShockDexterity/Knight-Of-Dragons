@@ -186,7 +186,7 @@ MonoBehaviour:
   player: {fileID: 0}
   physics: {fileID: 8986213089048827214}
   animator: {fileID: 8986213089048827212}
-  attackPrefab: {fileID: 0}
+  attackPrefab: {fileID: 3360873497019601623, guid: fd2d01c96c405d5439428b14b4206061, type: 3}
   attackPoint: {fileID: 8986213090764465552}
 --- !u!1 &8986213090292531244
 GameObject:

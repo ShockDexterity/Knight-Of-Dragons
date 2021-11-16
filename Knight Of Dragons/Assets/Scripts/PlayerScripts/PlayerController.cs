@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!jumping)
+        if (!jumping && canJump)
         {
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
             {
@@ -89,6 +89,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground")
         {
+            animator.SetBool("OnGround", true);
             // No Longer Jumping
             if (jumping)
             {
@@ -103,6 +104,10 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionExit2D()
     {
-        if (!jumping) { canJump = false; }
+        if (!jumping)
+        {
+            canJump = false;
+        }
+        animator.SetBool("OnGround", false);
     }
 }//end class PlayerController

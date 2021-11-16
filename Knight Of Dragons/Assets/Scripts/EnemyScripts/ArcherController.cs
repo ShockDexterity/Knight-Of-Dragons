@@ -118,7 +118,7 @@ public class ArcherController : MonoBehaviour
         archerX = this.transform.position.x;
         archerY = this.transform.position.y;
 
-        if (Mathf.Abs(playerY - archerY) < 2f)
+        if (Mathf.Abs(playerY - archerY) < 4f)
         {
             if (!facingLeft && playerX > archerX)
             {

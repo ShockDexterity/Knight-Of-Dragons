@@ -41,7 +41,7 @@ public class PlayerFireBreath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!animator.GetBool("Jumping") && Input.GetKeyDown(KeyCode.F) && (Time.time > nextAttack))
+        if (!animator.GetBool("Jumped") && Input.GetKeyDown(KeyCode.F) && (Time.time > nextAttack))
         {
             nextAttack = Time.time + attackRate;
             timeAttackStart = Time.time;

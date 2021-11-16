@@ -45,7 +45,7 @@ public class PlayerFrostBreath : MonoBehaviour
     {
         if (granted)
         {
-            if (!animator.GetBool("Jumping") && Input.GetKeyDown(KeyCode.G) && Time.time > nextAttack)
+            if (!animator.GetBool("Jumped") && Input.GetKeyDown(KeyCode.G) && Time.time > nextAttack)
             {
                 var t = Time.time;
                 nextAttack = t + attackRate;
