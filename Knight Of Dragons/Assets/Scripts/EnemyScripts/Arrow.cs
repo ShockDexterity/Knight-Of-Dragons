@@ -62,7 +62,7 @@ public class Arrow : MonoBehaviour
             case "Player":
                 var player = collision.gameObject.GetComponent<Player>();
                 if (player != null) { player.TakeDamage(damage); }
-                Debug.Log("Damage");
+
                 Destroy(this.gameObject);
                 break;
 

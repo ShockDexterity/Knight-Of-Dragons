@@ -17,10 +17,11 @@ public class PlayerBlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButton(1))
         {
             blocking = true;
 
+            animator.SetBool("Blocking", blocking);
             this.GetComponent<PlayerController>().enabled = false;
             this.GetComponent<PlayerMelee>().enabled = false;
             this.GetComponent<PlayerFireBreath>().enabled = false;
@@ -29,8 +30,8 @@ public class PlayerBlock : MonoBehaviour
         else if (this.GetComponent<Player>().alive)
         {
             blocking = false;
-            animator.SetBool("Blocking", blocking);
 
+            animator.SetBool("Blocking", blocking);
             this.GetComponent<PlayerController>().enabled = true;
             this.GetComponent<PlayerMelee>().enabled = true;
             this.GetComponent<PlayerFireBreath>().enabled = true;

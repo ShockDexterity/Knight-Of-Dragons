@@ -6,28 +6,21 @@ using UnityEngine.UI;
 public class HealthController : MonoBehaviour
 {
     public RectTransform rectTransform;
-    //public SpriteRenderer spriteRenderer;
-    public Sprite[] healthSprites;
-
     public Image image;
+    public Sprite[] healthSprites;
 
     // Start is called before the first frame update
     void Start()
     {
         healthSprites = Resources.LoadAll<Sprite>("health");
 
-        Debug.Log("help");
-
-        // healthpng = this.GetComponent<Image>();
         image.sprite = healthSprites[16];
-
-        //spriteRenderer.sprite = healthSprites[16];
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        /* eop */
     }
 
     public void UpdateHealth(int h)

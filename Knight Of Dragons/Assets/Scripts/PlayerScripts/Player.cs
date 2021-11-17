@@ -73,7 +73,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int incomingDamage)
     {
-        if (true)
+        if (!this.GetComponent<PlayerBlock>().blocking)
         {
             health -= incomingDamage;
             healthController.UpdateHealth((health >= 0) ? health : 0);
