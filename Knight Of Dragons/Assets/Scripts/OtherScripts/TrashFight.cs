@@ -22,9 +22,6 @@ public class TrashFight : MonoBehaviour
         if (tilemapRenderer == null) { tilemapRenderer = this.GetComponent<TilemapRenderer>(); }
         if (tilemapCollider2D == null) { tilemapCollider2D = this.GetComponent<TilemapCollider2D>(); }
 
-        // Debug.Log(spawnPoints.Length);
-        // Debug.Log(enemies.Length);
-
         started = false;
     }
 
@@ -43,19 +40,20 @@ public class TrashFight : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (player.position.x > 45f && player.position.x < 50f)
+        Debug.Log("TriggerExit");
+        if (player.position.x > 43f && player.position.x < 46f)
         {
+            Debug.Log("if");
             timeEntered = Time.time;
             started = true;
             tilemapCollider2D.isTrigger = false;
             tilemapRenderer.enabled = true;
 
-            // foreach (Transform spawnPoint in spawnPoints)
-            // {
-            //     int r = Random.Range(0, enemies.Length);
-            //     Instantiate(enemies[r], spawnPoint.position, Quaternion.identity);
-            //     Debug.Log(1);
-            // }
+            foreach (Transform spawnPoint in spawnPoints)
+            {
+                int r = Random.Range(0, enemies.Length);
+                Instantiate(enemies[r], spawnPoint.position, Quaternion.identity);
+            }
         }
         else if (player.position.x > 82f)
         {

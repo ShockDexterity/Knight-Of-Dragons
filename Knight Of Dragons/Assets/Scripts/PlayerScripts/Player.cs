@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
         hijacked = false;
 
         totalLoot = coinCount = gemCount = 0;
-        if (healthController == null) { healthController = GameObject.Find("Image").GetComponent<HealthController>(); }
+        //if (healthController == null) { healthController = GameObject.Find("Image").GetComponent<HealthController>(); }
     }//end Start()
 
     // Update is called once per frame
@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
         if (!this.GetComponent<PlayerBlock>().blocking)
         {
             health -= incomingDamage;
-            healthController.UpdateHealth((health >= 0) ? health : 0);
+            //healthController.UpdateHealth((health >= 0) ? health : 0);
         }
 
         if (health < 1) { this.Die(); }
