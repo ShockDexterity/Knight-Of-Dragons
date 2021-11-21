@@ -30,7 +30,7 @@ public class PlayerMelee : MonoBehaviour
     }//end Start()
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (!animator.GetBool("Jumped") && Input.GetMouseButtonDown(0) && (Time.time >= nextAttack))
         {
