@@ -40,10 +40,10 @@ public class TrashFight : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("TriggerExit");
+        // Debug.Log("TriggerExit");
         if (player.position.x > 43f && player.position.x < 46f)
         {
-            Debug.Log("if");
+            // Debug.Log("if");
             timeEntered = Time.time;
             started = true;
             tilemapCollider2D.isTrigger = false;

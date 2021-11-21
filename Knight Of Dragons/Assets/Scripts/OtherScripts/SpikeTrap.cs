@@ -8,10 +8,14 @@ public class SpikeTrap : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" /*&& Time.time > lastTrigger + 5f*/)
+        if (collision.gameObject.tag == "Player")
         {
             //lastTrigger = Time.time;
             collision.GetComponent<Player>().TakeDamage(16);
+        }
+        else
+        {
+            Destroy(collision.gameObject);
         }
     }
 }

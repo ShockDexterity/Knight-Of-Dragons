@@ -39,18 +39,17 @@ public class EndDoor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        switch (collision.gameObject.tag)
+        if(collision.gameObject.tag=="Player")
         {
-            case "Player":
-                canEnter = true;
-                break;
-
-            default: break;
+            canEnter = true;
         }
     }//end OnTriggerEnter2D()
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        canEnter = false;
+        if (collision.gameObject.tag == "Player")
+        {
+            canEnter = false;
+        }
     }//end OnTriggerExit2D()
 }
