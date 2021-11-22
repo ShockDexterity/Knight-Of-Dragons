@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public Animator animator;
     public Rigidbody2D physics;
     public HealthController healthController;
-    private const int maxHealth = 16;
+    private const int maxHealth = 32;
     public int health;
 
     public bool alive;
@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
         if (hijacked)
         {
             physics.velocity = new Vector2(2.5f, physics.velocity.y);
-            if (Time.time >= (timeOfHijack + 3f))
+            if (Time.time >= (timeOfHijack + 2f))
             {
                 SceneManager.LoadScene("YouWin");
             }
@@ -68,7 +68,7 @@ public class Player : MonoBehaviour
     {
         var hpot = health + pot;
         health = ((hpot) > maxHealth) ? maxHealth : hpot;
-        healthController.UpdateHealth(health);
+        healthController.UpdateHealth(health / 2);
     }//end Heal()
 
     public void TakeDamage(int incomingDamage)
@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
         if (!this.GetComponent<PlayerBlock>().blocking)
         {
             health -= incomingDamage;
-            healthController.UpdateHealth((health >= 0) ? health : 0);
+            healthController.UpdateHealth(health / 2);
         }
 
         if (health < 1) { this.Die(); }

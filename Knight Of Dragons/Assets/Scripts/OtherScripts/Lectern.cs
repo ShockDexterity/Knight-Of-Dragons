@@ -28,6 +28,7 @@ public class Lectern : MonoBehaviour
             timeUsed = Time.time;
             used = true;
             animator.SetTrigger("Used");
+            this.GetComponent<Interactable>().used = true;
         }
 
         if (used && Time.time > (timeUsed + abilityDelay))

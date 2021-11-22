@@ -1,217 +1,112 @@
 fileFormatVersion: 2
-guid: 45ce18dd0f42a7d46bc17b0db872a1bb
+guid: 4807f8a813813bd4d8009e020bd24a37
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7614699872510176671
-    second: Lectern_and_Rune_Book_0
+      213: -3827348312939955669
+    second: frostBreathLectern_0
   - first:
-      213: 9119119856861755630
-    second: Lectern_and_Rune_Book_1
+      213: 1018258532584182491
+    second: frostBreathLectern_1
   - first:
-      213: -5715765011300464573
-    second: Lectern_and_Rune_Book_2
+      213: -6263489300842864886
+    second: frostBreathLectern_2
   - first:
-      213: -2385878557167184216
-    second: Lectern_and_Rune_Book_3
+      213: 6769620019976793635
+    second: frostBreathLectern_3
   - first:
-      213: -3454894232550008178
-    second: Lectern_and_Rune_Book_4
+      213: 5476238205024371238
+    second: frostBreathLectern_4
   - first:
-      213: -655132212591525402
-    second: Lectern_and_Rune_Book_5
+      213: 601817306918688441
+    second: frostBreathLectern_5
   - first:
-      213: 4117385162529242624
-    second: Lectern_and_Rune_Book_6
+      213: -1570130918021667610
+    second: frostBreathLectern_6
   - first:
-      213: -7698007289427096893
-    second: Lectern_and_Rune_Book_7
+      213: -5801736319462801332
+    second: frostBreathLectern_7
   - first:
-      213: -8284196517442627373
-    second: Lectern_and_Rune_Book_8
+      213: 287398409181869520
+    second: frostBreathLectern_8
   - first:
-      213: -2440630011009509716
-    second: Lectern_and_Rune_Book_9
+      213: 3884548498337056649
+    second: frostBreathLectern_9
   - first:
-      213: 7676870095203257954
-    second: Lectern_and_Rune_Book_10
+      213: 3367006459991154629
+    second: frostBreathLectern_10
   - first:
-      213: -5707500352433065013
-    second: Lectern_and_Rune_Book_11
+      213: -3062929714014212469
+    second: frostBreathLectern_11
   - first:
-      213: -8301195785990847811
-    second: Lectern_and_Rune_Book_12
+      213: -3022173986970009185
+    second: frostBreathLectern_12
   - first:
-      213: 4775116479868012067
-    second: Lectern_and_Rune_Book_13
+      213: 4943322782573170599
+    second: frostBreathLectern_13
   - first:
-      213: 6318204902401684544
-    second: Lectern_and_Rune_Book_14
+      213: 747375773911166382
+    second: frostBreathLectern_14
   - first:
-      213: 4115831646457580404
-    second: Lectern_and_Rune_Book_15
+      213: 5237893267147124996
+    second: frostBreathLectern_15
   - first:
-      213: -632654168644085769
-    second: Lectern_and_Rune_Book_16
+      213: -8599550968077793165
+    second: frostBreathLectern_16
   - first:
-      213: 5981852847958314192
-    second: Lectern_and_Rune_Book_17
+      213: 6875456536923694320
+    second: frostBreathLectern_17
   - first:
-      213: -2844859699726377635
-    second: Lectern_and_Rune_Book_18
+      213: 7526659034283086512
+    second: frostBreathLectern_18
   - first:
-      213: 7063930933385435229
-    second: Lectern_and_Rune_Book_19
+      213: 7579274002308164122
+    second: frostBreathLectern_19
   - first:
-      213: 4779509066904692254
-    second: Lectern_and_Rune_Book_20
+      213: 5307523159943653345
+    second: frostBreathLectern_20
   - first:
-      213: 3551356749188080277
-    second: Lectern_and_Rune_Book_21
+      213: -4204763626896137343
+    second: frostBreathLectern_21
   - first:
-      213: -5979121261242134417
-    second: Lectern_and_Rune_Book_22
+      213: -2345560886547593763
+    second: frostBreathLectern_22
   - first:
-      213: 187508638029191092
-    second: Lectern_and_Rune_Book_23
+      213: -1903176409852860130
+    second: frostBreathLectern_23
   - first:
-      213: 7787411360204635813
-    second: Lectern_and_Rune_Book_24
+      213: -2654850165339389553
+    second: frostBreathLectern_24
   - first:
-      213: 5041441758452673725
-    second: Lectern_and_Rune_Book_25
+      213: -3950616137715131881
+    second: frostBreathLectern_25
   - first:
-      213: 7687487768431290886
-    second: Lectern_and_Rune_Book_26
+      213: 761080352269019386
+    second: frostBreathLectern_26
   - first:
-      213: 3240419569447999502
-    second: Lectern_and_Rune_Book_27
+      213: 4177136246360539174
+    second: frostBreathLectern_27
   - first:
-      213: 8597623608662593670
-    second: Lectern_and_Rune_Book_28
+      213: -3123012660759786721
+    second: frostBreathLectern_28
   - first:
-      213: -504694428683446798
-    second: Lectern_and_Rune_Book_29
+      213: 5092707066292944169
+    second: frostBreathLectern_29
   - first:
-      213: -631218443785346444
-    second: Lectern_and_Rune_Book_30
+      213: 7595808950243415566
+    second: frostBreathLectern_30
   - first:
-      213: -200086119036957669
-    second: Lectern_and_Rune_Book_31
+      213: -2605453679597392408
+    second: frostBreathLectern_31
   - first:
-      213: 8366250373724197155
-    second: Lectern_and_Rune_Book_32
+      213: 789142554509226466
+    second: frostBreathLectern_32
   - first:
-      213: -7142080723802502607
-    second: Lectern_and_Rune_Book_33
+      213: -7055776324419596037
+    second: frostBreathLectern_33
   - first:
-      213: -5718992406327945312
-    second: Lectern_and_Rune_Book_34
-  - first:
-      213: 2153400762802885164
-    second: lectern_0
-  - first:
-      213: -3881559600737857242
-    second: lectern_1
-  - first:
-      213: 4903866930522254904
-    second: lectern_2
-  - first:
-      213: 3212210840362197453
-    second: lectern_3
-  - first:
-      213: 8333241228219557027
-    second: lectern_4
-  - first:
-      213: -1215785411930947025
-    second: lectern_5
-  - first:
-      213: 8929038242047979292
-    second: lectern_6
-  - first:
-      213: -806116007346328196
-    second: lectern_7
-  - first:
-      213: -8907713244294935509
-    second: lectern_8
-  - first:
-      213: -2058738887792125228
-    second: lectern_9
-  - first:
-      213: 369267022375112117
-    second: lectern_10
-  - first:
-      213: -8549237676841936629
-    second: lectern_11
-  - first:
-      213: -9102339016221044926
-    second: lectern_12
-  - first:
-      213: 8063670150205797266
-    second: lectern_13
-  - first:
-      213: -9124740899960912271
-    second: lectern_14
-  - first:
-      213: -7297817515001553836
-    second: lectern_15
-  - first:
-      213: 884552935024310817
-    second: lectern_16
-  - first:
-      213: -1297807408329682345
-    second: lectern_17
-  - first:
-      213: 3606802913265954097
-    second: lectern_18
-  - first:
-      213: 7615823325786150897
-    second: lectern_19
-  - first:
-      213: 3849615497331063405
-    second: lectern_20
-  - first:
-      213: -1163668217470210037
-    second: lectern_21
-  - first:
-      213: -8365299298331972285
-    second: lectern_22
-  - first:
-      213: 4130060260935516118
-    second: lectern_23
-  - first:
-      213: -3402326305974195304
-    second: lectern_24
-  - first:
-      213: 6186834519254087646
-    second: lectern_25
-  - first:
-      213: 4792500574267290021
-    second: lectern_26
-  - first:
-      213: -8560386036031861479
-    second: lectern_27
-  - first:
-      213: -1239489762373917995
-    second: lectern_28
-  - first:
-      213: -7587195326388757655
-    second: lectern_29
-  - first:
-      213: 493282024536312879
-    second: lectern_30
-  - first:
-      213: -4735874821660157632
-    second: lectern_31
-  - first:
-      213: 8274626782206133984
-    second: lectern_32
-  - first:
-      213: -5180741433239564366
-    second: lectern_33
-  - first:
-      213: -1288959072748259649
-    second: lectern_34
+      213: 7728896579908311169
+    second: frostBreathLectern_34
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -301,7 +196,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lectern_0
+      name: frostBreathLectern_0
       rect:
         serializedVersion: 2
         x: 21
@@ -309,20 +204,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c22dbe5a59a62ed10800000000000000
-      internalID: 2153400762802885164
+      spriteID: b2af58fccf682eac0800000000000000
+      internalID: -3827348312939955669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_1
+      name: frostBreathLectern_1
       rect:
         serializedVersion: 2
         x: 85
@@ -330,20 +225,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6215387cb1ee12ac0800000000000000
-      internalID: -3881559600737857242
+      spriteID: bd2d03c8db4912e00800000000000000
+      internalID: 1018258532584182491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_2
+      name: frostBreathLectern_2
       rect:
         serializedVersion: 2
         x: 149
@@ -351,20 +246,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83e6093ddf80e0440800000000000000
-      internalID: 4903866930522254904
+      spriteID: a0f1dc09aad9319a0800000000000000
+      internalID: -6263489300842864886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_3
+      name: frostBreathLectern_3
       rect:
         serializedVersion: 2
         x: 213
@@ -372,20 +267,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc1a2738db0149c20800000000000000
-      internalID: 3212210840362197453
+      spriteID: 32ee61b8a8582fd50800000000000000
+      internalID: 6769620019976793635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_4
+      name: frostBreathLectern_4
       rect:
         serializedVersion: 2
         x: 277
@@ -393,20 +288,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a4aaa3eebe95a370800000000000000
-      internalID: 8333241228219557027
+      spriteID: 62286e312a18ffb40800000000000000
+      internalID: 5476238205024371238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_5
+      name: frostBreathLectern_5
       rect:
         serializedVersion: 2
         x: 341
@@ -414,20 +309,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2201cefb99a02fe0800000000000000
-      internalID: -1215785411930947025
+      spriteID: 9b6129ee6a51a5800800000000000000
+      internalID: 601817306918688441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_6
+      name: frostBreathLectern_6
       rect:
         serializedVersion: 2
         x: 21
@@ -435,20 +330,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1fe52b19f05aeb70800000000000000
-      internalID: 8929038242047979292
+      spriteID: 6e4e57cbf36c53ae0800000000000000
+      internalID: -1570130918021667610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_7
+      name: frostBreathLectern_7
       rect:
         serializedVersion: 2
         x: 85
@@ -456,20 +351,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7dad5623c910d4f0800000000000000
-      internalID: -806116007346328196
+      spriteID: c4000fd6e871c7fa0800000000000000
+      internalID: -5801736319462801332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_8
+      name: frostBreathLectern_8
       rect:
         serializedVersion: 2
         x: 149
@@ -477,20 +372,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2c02c8dff1716480800000000000000
-      internalID: -8907713244294935509
+      spriteID: 0d53c48945b0df300800000000000000
+      internalID: 287398409181869520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_9
+      name: frostBreathLectern_9
       rect:
         serializedVersion: 2
         x: 213
@@ -498,20 +393,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4da1ed3a3e3ed63e0800000000000000
-      internalID: -2058738887792125228
+      spriteID: 987482c2740b8e530800000000000000
+      internalID: 3884548498337056649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_10
+      name: frostBreathLectern_10
       rect:
         serializedVersion: 2
         x: 277
@@ -519,20 +414,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bd4fef7666ef1500800000000000000
-      internalID: 369267022375112117
+      spriteID: 5cfd73449820abe20800000000000000
+      internalID: 3367006459991154629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_11
+      name: frostBreathLectern_11
       rect:
         serializedVersion: 2
         x: 341
@@ -540,20 +435,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b095373f0a10b5980800000000000000
-      internalID: -8549237676841936629
+      spriteID: b8ea13837a94e75d0800000000000000
+      internalID: -3062929714014212469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_12
+      name: frostBreathLectern_12
       rect:
         serializedVersion: 2
         x: 21
@@ -561,20 +456,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24f47f814eefda180800000000000000
-      internalID: -9102339016221044926
+      spriteID: f910a3165c41f06d0800000000000000
+      internalID: -3022173986970009185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_13
+      name: frostBreathLectern_13
       rect:
         serializedVersion: 2
         x: 85
@@ -582,20 +477,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 293ffe84749e7ef60800000000000000
-      internalID: 8063670150205797266
+      spriteID: 7af8e5141e53a9440800000000000000
+      internalID: 4943322782573170599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_14
+      name: frostBreathLectern_14
       rect:
         serializedVersion: 2
         x: 149
@@ -603,20 +498,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1760a561f786e5180800000000000000
-      internalID: -9124740899960912271
+      spriteID: ead25bd7e463f5a00800000000000000
+      internalID: 747375773911166382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_15
+      name: frostBreathLectern_15
       rect:
         serializedVersion: 2
         x: 213
@@ -624,20 +519,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45c55b6b2a1f8ba90800000000000000
-      internalID: -7297817515001553836
+      spriteID: 401f6b7cc2cb0b840800000000000000
+      internalID: 5237893267147124996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_16
+      name: frostBreathLectern_16
       rect:
         serializedVersion: 2
         x: 277
@@ -645,20 +540,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12a37253530964c00800000000000000
-      internalID: 884552935024310817
+      spriteID: 3784bd7f4f148a880800000000000000
+      internalID: -8599550968077793165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_17
+      name: frostBreathLectern_17
       rect:
         serializedVersion: 2
         x: 341
@@ -666,20 +561,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75293a7c9034dfde0800000000000000
-      internalID: -1297807408329682345
+      spriteID: 0f469f7ea478a6f50800000000000000
+      internalID: 6875456536923694320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_18
+      name: frostBreathLectern_18
       rect:
         serializedVersion: 2
         x: 21
@@ -687,20 +582,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13daf04d320fd0230800000000000000
-      internalID: 3606802913265954097
+      spriteID: 0b29de38380147860800000000000000
+      internalID: 7526659034283086512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_19
+      name: frostBreathLectern_19
       rect:
         serializedVersion: 2
         x: 85
@@ -708,20 +603,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f71e95e6f6d0b960800000000000000
-      internalID: 7615823325786150897
+      spriteID: a1a6ee26c8dfe2960800000000000000
+      internalID: 7579274002308164122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_20
+      name: frostBreathLectern_20
       rect:
         serializedVersion: 2
         x: 149
@@ -729,20 +624,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6ab14016e49c6530800000000000000
-      internalID: 3849615497331063405
+      spriteID: 1e7a999813c18a940800000000000000
+      internalID: 5307523159943653345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_21
+      name: frostBreathLectern_21
       rect:
         serializedVersion: 2
         x: 213
@@ -750,20 +645,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b00b64debe1d9dfe0800000000000000
-      internalID: -1163668217470210037
+      spriteID: 1836f5652cda5a5c0800000000000000
+      internalID: -4204763626896137343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_22
+      name: frostBreathLectern_22
       rect:
         serializedVersion: 2
         x: 277
@@ -771,20 +666,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34d29130c9c78eb80800000000000000
-      internalID: -8365299298331972285
+      spriteID: dd5c74e0dc4e27fd0800000000000000
+      internalID: -2345560886547593763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_23
+      name: frostBreathLectern_23
       rect:
         serializedVersion: 2
         x: 341
@@ -792,20 +687,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dfb402ecebe05930800000000000000
-      internalID: 4130060260935516118
+      spriteID: e1921d1832f8695e0800000000000000
+      internalID: -1903176409852860130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_24
+      name: frostBreathLectern_24
       rect:
         serializedVersion: 2
         x: 21
@@ -813,20 +708,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89be072404288c0d0800000000000000
-      internalID: -3402326305974195304
+      spriteID: f810f0337d3182bd0800000000000000
+      internalID: -2654850165339389553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_25
+      name: frostBreathLectern_25
       rect:
         serializedVersion: 2
         x: 85
@@ -834,20 +729,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed7b34c473d0cd550800000000000000
-      internalID: 6186834519254087646
+      spriteID: 71a5093dd879c29c0800000000000000
+      internalID: -3950616137715131881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_26
+      name: frostBreathLectern_26
       rect:
         serializedVersion: 2
         x: 149
@@ -855,20 +750,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a1be0b61e1628240800000000000000
-      internalID: 4792500574267290021
+      spriteID: af8268a4c86ef8a00800000000000000
+      internalID: 761080352269019386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_27
+      name: frostBreathLectern_27
       rect:
         serializedVersion: 2
         x: 213
@@ -876,20 +771,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91d4b1e4146633980800000000000000
-      internalID: -8560386036031861479
+      spriteID: 6208abed84b28f930800000000000000
+      internalID: 4177136246360539174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_28
+      name: frostBreathLectern_28
       rect:
         serializedVersion: 2
         x: 277
@@ -897,20 +792,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d228f2d0a27ccee0800000000000000
-      internalID: -1239489762373917995
+      spriteID: f1b8d5e0884d8a4d0800000000000000
+      internalID: -3123012660759786721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_29
+      name: frostBreathLectern_29
       rect:
         serializedVersion: 2
         x: 341
@@ -918,20 +813,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96b1811ac0ed4b690800000000000000
-      internalID: -7587195326388757655
+      spriteID: 92d338f281eeca640800000000000000
+      internalID: 5092707066292944169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_30
+      name: frostBreathLectern_30
       rect:
         serializedVersion: 2
         x: 21
@@ -939,20 +834,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2c8296436d78d600800000000000000
-      internalID: 493282024536312879
+      spriteID: e06ddf4fefbb96960800000000000000
+      internalID: 7595808950243415566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_31
+      name: frostBreathLectern_31
       rect:
         serializedVersion: 2
         x: 85
@@ -960,20 +855,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 049da3201fac64eb0800000000000000
-      internalID: -4735874821660157632
+      spriteID: 8edecd4cea197dbd0800000000000000
+      internalID: -2605453679597392408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_32
+      name: frostBreathLectern_32
       rect:
         serializedVersion: 2
         x: 149
@@ -981,20 +876,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e68452b73165d270800000000000000
-      internalID: 8274626782206133984
+      spriteID: 2e1baa6e8f893fa00800000000000000
+      internalID: 789142554509226466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_33
+      name: frostBreathLectern_33
       rect:
         serializedVersion: 2
         x: 213
@@ -1002,20 +897,20 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bf8b9e7d1f4a18b0800000000000000
-      internalID: -5180741433239564366
+      spriteID: bf0db58e0d8d41e90800000000000000
+      internalID: -7055776324419596037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lectern_34
+      name: frostBreathLectern_34
       rect:
         serializedVersion: 2
         x: 277
@@ -1023,14 +918,14 @@ TextureImporter:
         width: 22
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb6b2d27d82bc1ee0800000000000000
-      internalID: -1288959072748259649
+      spriteID: 1889a2f6d7e824b60800000000000000
+      internalID: 7728896579908311169
       vertices: []
       indices: 
       edges: []

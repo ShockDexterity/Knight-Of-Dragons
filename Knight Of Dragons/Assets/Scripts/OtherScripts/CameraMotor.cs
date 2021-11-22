@@ -20,7 +20,7 @@ public class CameraMotor : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if(followPlayer)
+        if (followPlayer)
         {
             float deltaX = lookAt.position.x - this.transform.position.x;
             float deltaY = lookAt.position.y - this.transform.position.y + 1f;

@@ -79,11 +79,9 @@ public class Enemy : MonoBehaviour
             deathTime = timeHurt;
             if (!lootDropped) { DropLoot(); }
             animator.SetTrigger("Died");
-            if (scene.name == "Level_3")
-            {
-                var r = Random.Range(0, 5);
-                if (r == 4) { GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().Heal(4); }
-            }
+
+            int r = Random.Range(0, 5);
+            if (r == 4) { GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().Heal(4); }
         }
         else { this.GetComponent<SpriteRenderer>().color = Color.red; }
     }

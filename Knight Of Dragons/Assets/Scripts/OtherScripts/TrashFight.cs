@@ -41,23 +41,27 @@ public class TrashFight : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         // Debug.Log("TriggerExit");
-        if (player.position.x > 43f && player.position.x < 46f)
+        if (collision.tag == "Player")
         {
-            // Debug.Log("if");
-            timeEntered = Time.time;
-            started = true;
-            tilemapCollider2D.isTrigger = false;
-            tilemapRenderer.enabled = true;
-
-            foreach (Transform spawnPoint in spawnPoints)
+            if (player.position.x > 43f && player.position.x < 46f)
             {
-                int r = Random.Range(0, enemies.Length);
-                Instantiate(enemies[r], spawnPoint.position, Quaternion.identity);
+                // Debug.Log("if");
+                timeEntered = Time.time;
+                started = true;
+                tilemapCollider2D.isTrigger = false;
+                tilemapRenderer.enabled = true;
+
+                foreach (Transform spawnPoint in spawnPoints)
+                {
+                    Debug.Log("ugh");
+                    int r = Random.Range(0, enemies.Length);
+                    Instantiate(enemies[r], spawnPoint.position, Quaternion.identity);
+                }
             }
-        }
-        else if (player.position.x > 82f)
-        {
-            PlayerLeft();
+            else if (player.position.x > 82f)
+            {
+                PlayerLeft();
+            }
         }
     }
 
@@ -71,5 +75,6 @@ public class TrashFight : MonoBehaviour
     private void PlayerLeft()
     {
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().Hijack();
+        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraMotor>().followPlayer = false;
     }
 }

@@ -26,7 +26,7 @@ public class Switch : MonoBehaviour
                 this.gameObject.GetComponent<SpriteRenderer>().sprite = on;
                 toggled = true;
                 GameObject.FindGameObjectWithTag("Gate").GetComponent<GateControl>().Open();
-                this.GetComponent<Interactable>().used = false;
+                this.GetComponent<Interactable>().used = true;
             }
         }
     }
