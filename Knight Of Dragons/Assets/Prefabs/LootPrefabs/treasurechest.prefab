@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2161809153008362831}
   - component: {fileID: 2161809153008362828}
   - component: {fileID: 2161809153008362829}
+  - component: {fileID: 755059806390618567}
   m_Layer: 0
   m_Name: treasurechest
   m_TagString: Untagged
@@ -147,3 +148,16 @@ MonoBehaviour:
   - {fileID: 3217637848407593788, guid: 6d1e540a0cfbb014c99349276222ffc9, type: 3}
   - {fileID: 3671094590730861059, guid: 74eeed83dbec0544eaaa8cd3456a3504, type: 3}
   - {fileID: 5598508204672701565, guid: a69a4b5381ccb6c4abcf735a46495291, type: 3}
+--- !u!114 &755059806390618567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2161809153008362832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff828ee1c3ffda2458df3c1b278a8bcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}

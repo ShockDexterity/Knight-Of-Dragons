@@ -54,6 +54,7 @@ public class TreasureChest : MonoBehaviour
             animator.SetTrigger("Looted");
             looted = true;
             Instantiate(loot, lootSpawnPoint, Quaternion.identity);
+            this.GetComponent<Interactable>().used = false;
         }
     }
 
