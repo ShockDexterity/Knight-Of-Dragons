@@ -30,12 +30,13 @@ public class MageController : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        if (physics = null) { physics = this.GetComponent<Rigidbody2D>(); }
+        if (physics == null) { physics = this.GetComponent<Rigidbody2D>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
 
         vel = new Vector2(1f, 0);
+        dirX = 0;
         moveRate = 1f;
-        moveCounter = 0f;
+        moveCounter = 2f;
         seesPlayer = false;
         attackRate = 2f;
     }//end Start()
@@ -47,7 +48,7 @@ public class MageController : MonoBehaviour
         if (!seesPlayer)
         {
             // Update movement
-            if (moveCounter > moveRate)
+            if (moveCounter >= moveRate)
             {
                 ChangeDirection();
                 moveCounter = 0f;

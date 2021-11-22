@@ -28,7 +28,6 @@ public class MovingSpikeTrap : MonoBehaviour
         {
             lastTrigger = Time.time;
             collision.GetComponent<Player>().TakeDamage(damage);
-            Debug.Log(";)");
         }
     }
 }

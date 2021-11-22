@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
         jumpDelay = 8f / 13f;
 
-        speed = 2.5f;
+        speed = 3.5f;
         jumpForce = new Vector2(0, 8f);
         jumping = false;
         inJumpDelay = false;
