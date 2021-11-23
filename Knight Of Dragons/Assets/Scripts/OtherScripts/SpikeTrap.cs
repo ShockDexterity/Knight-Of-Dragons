@@ -11,9 +11,9 @@ public class SpikeTrap : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             //lastTrigger = Time.time;
-            collision.GetComponent<Player>().TakeDamage(16);
+            collision.GetComponent<Player>().TakeDamage(100);
         }
-        else
+        else if (collision.tag != "Walker")
         {
             Destroy(collision.gameObject);
         }

@@ -25,11 +25,8 @@ public class Loot : MonoBehaviour
                 break;
 
             case "Walker":
-                if (transform.parent.tag == "Player")
-                {
-                    player.GetComponent<Player>().AcquireLoot(value);
-                    Destroy(this.gameObject);
-                }
+                player.GetComponent<Player>().AcquireLoot(value);
+                Destroy(this.gameObject);
                 break;
 
             // The player didn't walk into it so do nothing

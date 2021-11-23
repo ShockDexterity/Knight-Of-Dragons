@@ -18,7 +18,7 @@ public class Interactable : MonoBehaviour
     {
         if (!used && collision.gameObject.tag == "Player")
         {
-            spriteRenderer.color = Color.blue;
+            spriteRenderer.color = new Vector4(0, 0.5f, 1, 1);
         }
     }//end OnTriggerEnter2D()
 

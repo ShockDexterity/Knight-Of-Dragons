@@ -35,7 +35,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!jumping && canJump)
+        // Debug.Log("jumping: " + jumping);
+        // Debug.Log("canJump: " + canJump);
+        if (!jumping && (canJump || physics.velocity.y > -0.2f))
         {
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
             {

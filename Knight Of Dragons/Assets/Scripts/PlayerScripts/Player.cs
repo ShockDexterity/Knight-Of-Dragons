@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
         if (!this.GetComponent<PlayerBlock>().blocking)
         {
             health -= incomingDamage;
-            healthController.UpdateHealth(health / 2);
+            healthController.UpdateHealth((health > 0) ? health / 2 : 0);
         }
 
         if (health < 1) { this.Die(); }
@@ -84,9 +84,10 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
+        animator.SetBool("Died", true);
         timeOfDeath = Time.time;
         alive = false;
-
+        Debug.Log(timeOfDeath);
         this.GetComponent<PlayerBlock>().enabled = false;
         this.GetComponent<PlayerController>().enabled = false;
         this.GetComponent<PlayerMelee>().enabled = false;
@@ -94,9 +95,10 @@ public class Player : MonoBehaviour
         this.GetComponent<PlayerFrostBreath>().enabled = false;
 
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        foreach (GameObject enemy in enemies) { Destroy(enemy); }
-
-        animator.SetTrigger("Died");
+        foreach (var enemy in enemies)
+        {
+            if (enemy.tag != "Walker") { Destroy(enemy); }
+        }
     }
 
     public void Hijack()

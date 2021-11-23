@@ -55,6 +55,7 @@ public class TreasureChest : MonoBehaviour
             looted = true;
             Instantiate(loot, lootSpawnPoint, Quaternion.identity);
             this.GetComponent<Interactable>().used = true;
+            this.GetComponent<SpriteRenderer>().color = Color.white;
         }
     }
 

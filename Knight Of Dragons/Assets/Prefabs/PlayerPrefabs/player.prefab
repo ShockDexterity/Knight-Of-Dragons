@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6134861393784817820}
   m_Layer: 10
   m_Name: walker
-  m_TagString: Untagged
+  m_TagString: Walker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -312,6 +312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 6134861394488319416}
   physics: {fileID: 6134861394488319418}
+  healthController: {fileID: 0}
   health: 0
   alive: 0
 --- !u!114 &5826438420760948621
@@ -359,7 +360,7 @@ MonoBehaviour:
   attackPoint: {fileID: 6134861393918074001}
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
 --- !u!114 &7652640513771805959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,7 +421,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6134861395731336079}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6, y: 0.07, z: 0}
+  m_LocalPosition: {x: 0.6, y: 0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6134861393918074001}

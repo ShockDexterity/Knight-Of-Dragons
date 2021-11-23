@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - NoEnemy
   - ProjPass
+  - Walker
   layers:
   - Default
   - TransparentFX
