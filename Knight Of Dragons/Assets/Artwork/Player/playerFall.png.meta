@@ -1,22 +1,16 @@
 fileFormatVersion: 2
-guid: fb927bfe605b76c41a75806fb1b7fec2
+guid: 11440d08aacb1e546954f7183a30fc48
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1567455308318363136
-    second: playerSwordSwing_0
+      213: 1039622220905202520
+    second: playerFall_0
   - first:
-      213: -6749005821418865847
-    second: playerSwordSwing_1
+      213: 9072773792893459292
+    second: playerFall_1
   - first:
-      213: 6295471560560949473
-    second: playerSwordSwing_2
-  - first:
-      213: 3119849970331131422
-    second: playerSwordSwing_3
-  - first:
-      213: -7194358579634298545
-    second: playerSwordSwing_4
+      213: 198422367563558340
+    second: playerFall_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,55 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Lumin
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -166,91 +112,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: playerSwordSwing_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 002326aa3b74f3ae0800000000000000
-      internalID: -1567455308318363136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerSwordSwing_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 94bf84396f6b652a0800000000000000
-      internalID: -6749005821418865847
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerSwordSwing_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e83fcc87020e5750800000000000000
-      internalID: 6295471560560949473
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerSwordSwing_3
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1e9912b40feb4b20800000000000000
-      internalID: 3119849970331131422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerSwordSwing_4
+      name: playerFall_0
       rect:
         serializedVersion: 2
         x: 0
@@ -264,8 +126,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f412d1a3df0882c90800000000000000
-      internalID: -7194358579634298545
+      spriteID: 85348a9d6ea7d6e00800000000000000
+      internalID: 1039622220905202520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerFall_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b53ece1b7f8ed70800000000000000
+      internalID: 9072773792893459292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerFall_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd2e1e8710f0c200800000000000000
+      internalID: 198422367563558340
       vertices: []
       indices: 
       edges: []

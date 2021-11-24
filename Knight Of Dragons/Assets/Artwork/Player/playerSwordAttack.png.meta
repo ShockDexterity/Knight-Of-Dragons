@@ -1,37 +1,43 @@
 fileFormatVersion: 2
-guid: 1f0af8cddc6a2dc449244dd87f35248c
+guid: 69eb859ba5f0d6347897389d7b1af0db
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4181329113398713291
-    second: playerFireBreath_0
+      213: -2106833232218946536
+    second: playerSwordAttack_0
   - first:
-      213: -7985195311194786958
-    second: playerFireBreath_1
+      213: -4096306449734410173
+    second: playerSwordAttack_1
   - first:
-      213: -5201207868183500175
-    second: playerFireBreath_2
+      213: -1921165746814709525
+    second: playerSwordAttack_2
   - first:
-      213: -8741298129954147800
-    second: playerFireBreath_3
+      213: -824350414197418226
+    second: playerSwordAttack_3
   - first:
-      213: 7288270149497560093
-    second: playerFireBreath_4
+      213: -2754898990997127890
+    second: playerSwordAttack_4
   - first:
-      213: 5985231875379977932
-    second: playerFireBreath_5
+      213: -69745004951003276
+    second: playerSwordAttack_5
   - first:
-      213: 6113314326793119764
-    second: playerFireBreath_6
+      213: 6173689481687701464
+    second: playerSwordAttack_6
   - first:
-      213: 280215712430805967
-    second: playerFireBreath_7
+      213: -7089125253379912633
+    second: playerSwordAttack_7
   - first:
-      213: -4577052759000846428
-    second: playerFireBreath_8
+      213: 5948396515651594388
+    second: playerSwordAttack_8
   - first:
-      213: 2247748781229077435
-    second: playerFireBreath_9
+      213: 1603522487763733148
+    second: playerSwordAttack_9
+  - first:
+      213: -7348018466269649520
+    second: playerSwordAttack_10
+  - first:
+      213: 3721379960675601156
+    second: playerSwordAttack_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: playerFireBreath_0
+      name: playerSwordAttack_0
       rect:
         serializedVersion: 2
         x: 0
@@ -147,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 534eed2335fe8f5c0800000000000000
-      internalID: -4181329113398713291
+      spriteID: 8140a98765603c2e0800000000000000
+      internalID: -2106833232218946536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerFireBreath_1
+      name: playerSwordAttack_1
       rect:
         serializedVersion: 2
         x: 80
@@ -168,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 273be1efb23ee2190800000000000000
-      internalID: -7985195311194786958
+      spriteID: 3406074bcfef627c0800000000000000
+      internalID: -4096306449734410173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerFireBreath_2
+      name: playerSwordAttack_2
       rect:
         serializedVersion: 2
         x: 160
@@ -189,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17aa4f5400991d7b0800000000000000
-      internalID: -5201207868183500175
+      spriteID: be0167a9ee5a655e0800000000000000
+      internalID: -1921165746814709525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerFireBreath_3
+      name: playerSwordAttack_3
       rect:
         serializedVersion: 2
         x: 240
@@ -210,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 822fb480aaba0b680800000000000000
-      internalID: -8741298129954147800
+      spriteID: e0711577aa15f84f0800000000000000
+      internalID: -824350414197418226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerFireBreath_4
+      name: playerSwordAttack_4
       rect:
         serializedVersion: 2
         x: 320
@@ -231,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1c92e70613252560800000000000000
-      internalID: 7288270149497560093
+      spriteID: e2db889b6f1a4c9d0800000000000000
+      internalID: -2754898990997127890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerFireBreath_5
+      name: playerSwordAttack_5
       rect:
         serializedVersion: 2
         x: 400
@@ -252,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cce5e56fda0df0350800000000000000
-      internalID: 5985231875379977932
+      spriteID: 47f990b9947380ff0800000000000000
+      internalID: -69745004951003276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerFireBreath_6
+      name: playerSwordAttack_6
       rect:
         serializedVersion: 2
         x: 480
@@ -273,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4186fc09dfad6d450800000000000000
-      internalID: 6113314326793119764
+      spriteID: 8d79f8dbfd95da550800000000000000
+      internalID: 6173689481687701464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerFireBreath_7
+      name: playerSwordAttack_7
       rect:
         serializedVersion: 2
         x: 560
@@ -294,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc3dbefa4b683e300800000000000000
-      internalID: 280215712430805967
+      spriteID: 74c0a00542e5e9d90800000000000000
+      internalID: -7089125253379912633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerFireBreath_8
+      name: playerSwordAttack_8
       rect:
         serializedVersion: 2
         x: 640
@@ -315,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4af688514ca0b70c0800000000000000
-      internalID: -4577052759000846428
+      spriteID: 498a5927d13fc8250800000000000000
+      internalID: 5948396515651594388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerFireBreath_9
+      name: playerSwordAttack_9
       rect:
         serializedVersion: 2
         x: 720
@@ -336,8 +342,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb3f9718b9b913f10800000000000000
-      internalID: 2247748781229077435
+      spriteID: c9a0280f43bd04610800000000000000
+      internalID: 1603522487763733148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerSwordAttack_10
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095acfae228960a90800000000000000
+      internalID: -7348018466269649520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerSwordAttack_11
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b83568b5ff4a330800000000000000
+      internalID: 3721379960675601156
       vertices: []
       indices: 
       edges: []

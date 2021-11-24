@@ -23,7 +23,7 @@ public class CameraMotor : MonoBehaviour
         if (followPlayer)
         {
             float deltaX = lookAt.position.x - this.transform.position.x;
-            float deltaY = lookAt.position.y - this.transform.position.y + 1f;
+            float deltaY = lookAt.position.y - this.transform.position.y;
             transform.position += new Vector3(deltaX, deltaY, 0);
         }
     }

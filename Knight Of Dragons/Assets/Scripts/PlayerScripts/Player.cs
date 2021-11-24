@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public CameraMotor cameraMotor;
+    public Transform respawnPoint;
+    private bool notMoved;
     public Animator animator;
     public Rigidbody2D physics;
     public HealthController healthController;
@@ -25,6 +28,8 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        notMoved = true;
+        if (cameraMotor == null) { cameraMotor = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraMotor>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
         if (physics == null) { physics = this.GetComponent<Rigidbody2D>(); }
 
@@ -47,7 +52,13 @@ public class Player : MonoBehaviour
                 SceneManager.LoadScene("YouWin");
             }
         }
-        if (!alive && Input.GetKeyDown(KeyCode.U) && Time.time >= (timeOfDeath + 5f))
+        if (notMoved && !alive && Time.time >= (timeOfDeath + 2f))
+        {
+            this.transform.position = respawnPoint.position;
+            notMoved = false;
+            if (!cameraMotor.followPlayer) { cameraMotor.followPlayer = true; }
+        }
+        if (!alive && Input.GetKeyDown(KeyCode.U) && Time.time >= (timeOfDeath + 2f))
         {
             var scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.name);
