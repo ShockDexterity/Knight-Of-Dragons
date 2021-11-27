@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerFireBreath : MonoBehaviour
 {
+    public FireMeter fireMeter;
     public PlayerController playerController;
     public SpriteRenderer spriteRenderer;
     public Animator animator;
@@ -27,6 +28,7 @@ public class PlayerFireBreath : MonoBehaviour
         if (playerController == null) { playerController = this.GetComponent<PlayerController>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
         if (spriteRenderer == null) { spriteRenderer = GameObject.Find("fireBreath").GetComponent<SpriteRenderer>(); }
+        if (fireMeter == null) { fireMeter = GameObject.Find("FireMeter").GetComponent<FireMeter>(); }
         this.spriteRenderer.enabled = false;
 
         attackRate = 10f;
@@ -48,6 +50,7 @@ public class PlayerFireBreath : MonoBehaviour
             attacking = true;
 
             animator.SetTrigger("FireAttack");
+            fireMeter.Cooldown();
         }
 
         if (attacking && Time.time > (timeAttackStart + fireDelay))

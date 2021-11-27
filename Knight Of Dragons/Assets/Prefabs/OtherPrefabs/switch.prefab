@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5300073289242967612}
   m_Layer: 0
   m_Name: switch
-  m_TagString: Untagged
+  m_TagString: ProjPass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,3 +140,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
+  used: 0

@@ -32,10 +32,10 @@ public class Projectile : MonoBehaviour
         }
     }//end FixedUpdate()
 
-    public void Fire(bool left, char _id)
+    public void Fire(bool left, char cid)
     {
-        id = _id;
-        speed = (left) ? -3f : 3f;
+        id = cid;
+        speed = (left) ? -3.5f : 3.5f;
 
         damage = (id == 'f') ? 10 : ((id == 'm') ? 1 : 0);
 
@@ -64,7 +64,7 @@ public class Projectile : MonoBehaviour
                 // Do nothing
                 case "Player": break;
 
-                case "AttackPass": break;
+                case "ProjPass": break;
 
                 case "NoEnemy": break;
 
@@ -89,7 +89,7 @@ public class Projectile : MonoBehaviour
 
                 case "NoEnemy": break;
 
-                case "AttackPass": break;
+                case "ProjPass": break;
 
                 // It hit some other collider, so it can be destroyed
                 default:

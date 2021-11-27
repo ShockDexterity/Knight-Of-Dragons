@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PlayerFrostBreath : MonoBehaviour
 {
+    public FrostMeter frostMeter;
     public GameObject frostAttack;
     public Animator animator;
     public Transform attackPoint;
@@ -12,13 +14,15 @@ public class PlayerFrostBreath : MonoBehaviour
     private float nextAttack;
     private bool attacking;
     private float timeAttackStart;
-
+    public bool madeVisible;
     private float iceDelay;
     public bool granted;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        if (frostMeter == null) { frostMeter = GameObject.Find("FrostMeter").GetComponent<FrostMeter>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
         attackRate = 10f;
         iceDelay = 5f / 11f;
@@ -28,14 +32,17 @@ public class PlayerFrostBreath : MonoBehaviour
         {
             case "SampleScene":
                 granted = true;
+                madeVisible = true;
                 break;
 
             case "Level_3":
                 granted = true;
+                madeVisible = true;
                 break;
 
             default:
                 granted = false;
+                madeVisible = false;
                 break;
         }
     }//end Start()
@@ -45,6 +52,12 @@ public class PlayerFrostBreath : MonoBehaviour
     {
         if (granted)
         {
+            if (!madeVisible)
+            {
+                madeVisible = true;
+                GameObject.Find("FrostImage").GetComponent<Image>().enabled = true;
+                GameObject.Find("FrostMeterBorder").GetComponent<Image>().enabled = true;
+            }
             if (!animator.GetBool("Jumped") && Input.GetKeyDown(KeyCode.G) && Time.time > nextAttack)
             {
                 var t = Time.time;
@@ -52,6 +65,7 @@ public class PlayerFrostBreath : MonoBehaviour
                 timeAttackStart = t;
                 attacking = true;
                 animator.SetTrigger("FrostAttack");
+                frostMeter.Cooldown();
             }
 
             if (attacking && Time.time > timeAttackStart + iceDelay)
