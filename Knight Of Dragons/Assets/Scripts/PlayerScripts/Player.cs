@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
@@ -32,13 +33,14 @@ public class Player : MonoBehaviour
         if (cameraMotor == null) { cameraMotor = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraMotor>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
         if (physics == null) { physics = this.GetComponent<Rigidbody2D>(); }
+        if (respawnPoint == null) { respawnPoint = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>(); }
 
         health = maxHealth;
         alive = true;
         hijacked = false;
 
         totalLoot = coinCount = gemCount = 0;
-        if (healthController == null) { healthController = GameObject.Find("Image").GetComponent<HealthController>(); }
+        if (healthController == null) { healthController = GameObject.Find("Health").GetComponent<HealthController>(); }
     }//end Start()
 
     // Update is called once per frame
@@ -54,6 +56,7 @@ public class Player : MonoBehaviour
         }
         if (notMoved && !alive && Time.time >= (timeOfDeath + 2f))
         {
+            GameObject.Find("DeathText").GetComponent<Text>().enabled = true;
             this.transform.position = respawnPoint.position;
             notMoved = false;
             if (!cameraMotor.followPlayer) { cameraMotor.followPlayer = true; }

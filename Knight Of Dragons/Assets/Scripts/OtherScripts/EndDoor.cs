@@ -22,6 +22,10 @@ public class EndDoor : MonoBehaviour
         {
             switch (scene)
             {
+                case "Level_0":
+                    SceneManager.LoadScene("Level_1");
+                    break;
+
                 case "Level_1":
                     SceneManager.LoadScene("Level_2");
                     break;
