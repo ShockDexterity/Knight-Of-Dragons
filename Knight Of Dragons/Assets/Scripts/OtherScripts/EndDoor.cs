@@ -35,7 +35,7 @@ public class EndDoor : MonoBehaviour
                     break;
 
                 case "Level_3":
-                    SceneManager.LoadScene("YouWin");
+                    SceneManager.LoadScene("Level_Boss");
                     break;
             }
         }

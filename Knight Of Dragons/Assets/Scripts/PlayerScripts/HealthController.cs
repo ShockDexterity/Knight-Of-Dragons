@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class HealthController : MonoBehaviour
 {
-    public RectTransform rectTransform;
     public Image image;
     public Sprite[] healthSprites;
 
@@ -15,12 +14,6 @@ public class HealthController : MonoBehaviour
         healthSprites = Resources.LoadAll<Sprite>("health");
 
         image.sprite = healthSprites[16];
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        /* eop */
     }
 
     public void UpdateHealth(int h)
