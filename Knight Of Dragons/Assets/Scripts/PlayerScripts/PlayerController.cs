@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     private float jumpDelay;
     private bool inJumpDelay;
     private int dirX;
-    private bool canJump;
+    public bool canJump;
 
     private Animator animator;
     private bool idle;
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
         if (physics == null) { physics = this.GetComponent<Rigidbody2D>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
 
-        jumpDelay = 2f / 5f;
+        jumpDelay = 2f / 7f;
 
         speed = 3.5f;
         jumpForce = new Vector2(0, 8f);

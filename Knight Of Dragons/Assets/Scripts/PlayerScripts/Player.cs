@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     public bool alive;
     private float timeOfDeath;
 
+    public GemDisplay gemDisplay;
     private int totalLoot;
     private int coinCount;
     private int gemCount;
@@ -34,6 +35,7 @@ public class Player : MonoBehaviour
         if (animator == null) { animator = this.GetComponent<Animator>(); }
         if (physics == null) { physics = this.GetComponent<Rigidbody2D>(); }
         if (respawnPoint == null) { respawnPoint = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>(); }
+        if (gemDisplay == null) { gemDisplay = GameObject.Find("Gems").GetComponent<GemDisplay>(); }
 
         health = maxHealth;
         alive = true;
@@ -75,7 +77,7 @@ public class Player : MonoBehaviour
 
         totalLoot += value;
 
-        Debug.Log("You acquired some loot! Your total loot is now: " + totalLoot);
+        gemDisplay.UpdateLoot(amt: totalLoot);
     }//end AcquireLoot
 
     public void Heal(int pot)
@@ -105,7 +107,7 @@ public class Player : MonoBehaviour
         healthController.UpdateHealth(h: 0);
         animator.SetBool("Died", true);
         timeOfDeath = Time.time;
-        Debug.Log("time of death: " + timeOfDeath);
+
         this.GetComponent<PlayerBlock>().enabled = false;
         this.GetComponent<PlayerController>().enabled = false;
         this.GetComponent<PlayerMelee>().enabled = false;
