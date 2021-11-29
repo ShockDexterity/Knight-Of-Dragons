@@ -32,7 +32,7 @@ public class PlayerMelee : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!animator.GetBool("Jumped") && Input.GetMouseButtonDown(0) && (Time.time >= nextAttack))
+        if (!playerController.jumping && Input.GetMouseButtonDown(0) && (Time.time >= nextAttack))
         {
             nextAttack = Time.time + attackRate;
             // audioSource.Play();
@@ -56,6 +56,14 @@ public class PlayerMelee : MonoBehaviour
         {
             Enemy e = enemy.GetComponent<Enemy>();
             if (e != null) { e.TakeDamage(damage); }
+            if (e == null)
+            {
+                Boss boss = enemy.GetComponent<Boss>();
+                if (boss != null)
+                {
+                    boss.TakeDamage(damage);
+                }
+            }
         }
     }//end Attack()
 

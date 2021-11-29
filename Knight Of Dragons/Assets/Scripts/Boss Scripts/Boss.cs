@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
-    private float shieldLength;
 
     public Animator animator;
 
@@ -27,9 +26,7 @@ public class Boss : MonoBehaviour
         health = maxHealth;
         alive = true;
 
-        shieldLength = (16f / 9f) + 2.5f;
-
-        deathLength = 24f / 9f;
+        deathLength = 23f / 9f;
     }
 
     // Update is called once per frame
@@ -48,7 +45,8 @@ public class Boss : MonoBehaviour
 
     public void TakeDamage(int incomingDamage)
     {
-        if (true)
+        Debug.Log("invinc: " + this.GetComponent<BossBlock>().invincible);
+        if (!this.GetComponent<BossBlock>().invincible)
         {
             health -= incomingDamage;
             if (health < 0) { health = 0; }
@@ -57,12 +55,15 @@ public class Boss : MonoBehaviour
 
         if (health < 1)
         {
+            this.GetComponent<BossController>().enabled = false;
             deathTime = Time.time;
             alive = false;
             animator.SetBool("Dead", true);
         }
         else
         {
+            timeHurt = Time.time;
+            underAttack = true;
             this.GetComponent<SpriteRenderer>().color = Color.red;
         }
     }

@@ -87,21 +87,25 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int incomingDamage)
     {
-        if (!this.GetComponent<PlayerBlock>().blocking)
+        if (alive && !this.GetComponent<PlayerBlock>().blocking)
         {
             health -= incomingDamage;
             healthController.UpdateHealth((health > 0) ? health / 2 : 0);
         }
 
-        if (health < 1) { this.Die(); }
+        if (health < 1)
+        {
+            if (alive) { this.Die(); }
+        }
     }//end TakeDamage()
 
-    private void Die()
+    public void Die()
     {
+        alive = false;
+        healthController.UpdateHealth(h: 0);
         animator.SetBool("Died", true);
         timeOfDeath = Time.time;
-        alive = false;
-        Debug.Log(timeOfDeath);
+        Debug.Log("time of death: " + timeOfDeath);
         this.GetComponent<PlayerBlock>().enabled = false;
         this.GetComponent<PlayerController>().enabled = false;
         this.GetComponent<PlayerMelee>().enabled = false;

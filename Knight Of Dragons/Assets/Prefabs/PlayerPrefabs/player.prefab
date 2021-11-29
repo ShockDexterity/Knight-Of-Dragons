@@ -343,6 +343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff0f5942cb200845a8195d9b53e8abb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumping: 0
   facingLeft: 0
 --- !u!114 &351430851690714388
 MonoBehaviour:
@@ -376,10 +377,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cacc490522a52ac47b2573bc2ff5cc41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  frostMeter: {fileID: 0}
   frostAttack: {fileID: 8135535517269417319, guid: e674e4a8fb3b2ec47be815a5909342a0, type: 3}
   animator: {fileID: 6134861394488319416}
   attackPoint: {fileID: 6134861394479999045}
+  madeVisible: 0
   granted: 0
+  playerController: {fileID: 6027823923950761957}
 --- !u!114 &5727258725932241153
 MonoBehaviour:
   m_ObjectHideFlags: 0

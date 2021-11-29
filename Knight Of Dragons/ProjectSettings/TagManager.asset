@@ -10,6 +10,7 @@ TagManager:
   - NoEnemy
   - ProjPass
   - Walker
+  - BOSS
   layers:
   - Default
   - TransparentFX

@@ -53,7 +53,6 @@ public class TrashFight : MonoBehaviour
 
                 foreach (Transform spawnPoint in spawnPoints)
                 {
-                    Debug.Log("ugh");
                     int r = Random.Range(0, enemies.Length);
                     Instantiate(enemies[r], spawnPoint.position, Quaternion.identity);
                 }

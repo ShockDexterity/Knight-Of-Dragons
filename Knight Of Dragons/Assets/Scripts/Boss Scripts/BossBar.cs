@@ -20,11 +20,10 @@ public class BossBar : MonoBehaviour
         {
             sprites = Resources.LoadAll<Sprite>("boss/bossHealthBar");
             tot = sprites.Length - 1;
-            image.sprite = sprites[tot];
+            image.sprite = sprites[0];
         }
         else
         {
-            Debug.Log("ugh");
             image.enabled = false;
             GameObject.Find("BossBorder").GetComponent<Image>().enabled = false;
         }

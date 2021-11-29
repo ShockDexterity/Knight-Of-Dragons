@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D physics;
     private float speed;
     private Vector2 jumpForce;
-    private bool jumping;
+    public bool jumping;
     private float timeJumped;
     private float jumpDelay;
     private bool inJumpDelay;

@@ -153,7 +153,9 @@ public class MaceController : MonoBehaviour
         }
         this.physics.velocity = vel * dirX;
 
-        idle = (Mathf.Abs(physics.velocity.x) < 0.01f) ? true : false;
+        if (dirX != 0 && idle) { Debug.Log("uh oh"); }
+        idle = (dirX != 0) ? true : false;
         animator.SetBool("Idle", idle);
+        Debug.Log("SeekPlayer Mace Idle = " + idle);
     }//end SeekPlayer()
 }//end class MaceController

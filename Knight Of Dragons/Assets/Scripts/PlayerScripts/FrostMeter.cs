@@ -22,6 +22,11 @@ public class FrostMeter : MonoBehaviour
                 GameObject.Find("FrostMeterBorder").GetComponent<Image>().enabled = true;
                 break;
 
+            case "Level_Boss":
+                GameObject.Find("FrostImage").GetComponent<Image>().enabled = true;
+                GameObject.Find("FrostMeterBorder").GetComponent<Image>().enabled = true;
+                break;
+
             default:
                 GameObject.Find("FrostImage").GetComponent<Image>().enabled = false;
                 GameObject.Find("FrostMeterBorder").GetComponent<Image>().enabled = false;

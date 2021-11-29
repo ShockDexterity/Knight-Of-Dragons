@@ -17,6 +17,7 @@ public class PlayerFrostBreath : MonoBehaviour
     public bool madeVisible;
     private float iceDelay;
     public bool granted;
+    public PlayerController playerController;
 
     // Start is called before the first frame update
     void Start()
@@ -58,7 +59,7 @@ public class PlayerFrostBreath : MonoBehaviour
                 GameObject.Find("FrostImage").GetComponent<Image>().enabled = true;
                 GameObject.Find("FrostMeterBorder").GetComponent<Image>().enabled = true;
             }
-            if (!animator.GetBool("Jumped") && Input.GetKeyDown(KeyCode.G) && Time.time > nextAttack)
+            if (!playerController.jumping && Input.GetKeyDown(KeyCode.G) && Time.time > nextAttack)
             {
                 var t = Time.time;
                 nextAttack = t + attackRate;

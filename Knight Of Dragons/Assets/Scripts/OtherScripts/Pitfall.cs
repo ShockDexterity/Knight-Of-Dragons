@@ -18,7 +18,7 @@ public class Pitfall : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.GetComponent<Player>().TakeDamage(100);
+            collision.GetComponent<Player>().Die();
             cameraMotor.followPlayer = false;
         }
     }
