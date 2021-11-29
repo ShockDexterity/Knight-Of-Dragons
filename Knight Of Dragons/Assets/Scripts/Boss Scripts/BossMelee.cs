@@ -2,52 +2,52 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KnightAttack : MonoBehaviour
+public class BossMelee : MonoBehaviour
 {
     public Animator animator;
-    public KnightController knightController;
+    public BossController bossController;
     public Transform attackPoint;
     public LayerMask playerLayer;
     public float attackRange;
-    private float attackDelay;
+    private float meleeDelay;
     private float timeAttacked;
-    private int damage;
+    // private int damage;
 
     // Start is called before the first frame update
     void Start()
     {
         if (animator == null) { animator = this.GetComponent<Animator>(); }
-        if (knightController == null) { knightController = this.GetComponent<KnightController>(); }
+        if (bossController == null) { bossController = this.GetComponent<BossController>(); }
 
         attackRange = 0.5f;
-        attackDelay = 1.182f;
-        damage = 2;
-    }//end Start()
+        meleeDelay = 14f / 11f;
+        // damage = 2;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (!knightController.enabled && Time.time > (timeAttacked + attackDelay))
+        if (!bossController.enabled && Time.time > (timeAttacked + meleeDelay))
         {
-            knightController.enabled = true;
+            bossController.enabled = true;
         }
-    }//end Update()
+    }
 
-    public void Attack()
+    public void MeleeAttack(int damage = 2)
     {
-        knightController.enabled = false;
+        bossController.enabled = false;
         timeAttacked = Time.time;
-        animator.SetTrigger("Attacking");
+        animator.SetTrigger("Melee");
 
         Collider2D[] players = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
         foreach (var player in players)
         {
             player.GetComponent<Player>().TakeDamage(damage);
         }
-    }//end Attack()
+    }
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-    }//end OnDrawGizmosSelected()
-}//end class KnightAttack
+    }
+}

@@ -6,9 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
-    private float dashLength;
     private float shieldLength;
-    private float meleeDelay;
 
     public Animator animator;
 
@@ -29,9 +27,7 @@ public class Boss : MonoBehaviour
         health = maxHealth;
         alive = true;
 
-        dashLength = 20f / 11f;
         shieldLength = (16f / 9f) + 2.5f;
-        meleeDelay = 14f / 11f;
 
         deathLength = 24f / 9f;
     }
