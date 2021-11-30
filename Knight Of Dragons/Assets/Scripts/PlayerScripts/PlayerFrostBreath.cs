@@ -41,6 +41,11 @@ public class PlayerFrostBreath : MonoBehaviour
                 madeVisible = true;
                 break;
 
+            case "Level_Boss":
+                granted = true;
+                madeVisible = true;
+                break;
+
             default:
                 granted = false;
                 madeVisible = false;

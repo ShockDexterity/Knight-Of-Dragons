@@ -26,6 +26,7 @@ public class PlayerMelee : MonoBehaviour
         if (animator == null) { animator = this.GetComponent<Animator>(); }
         if (playerController == null) { playerController = this.GetComponent<PlayerController>(); }
 
+        nextAttack = 0f;
         attackRate = 0.6f;
         attackRange = 0.5f;
         attackDelay = 14f / 14f;

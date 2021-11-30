@@ -23,10 +23,12 @@ public class BossController : MonoBehaviour
     public BossBlock bossBlock;
     public BossDash bossDash;
     public BossMelee bossMelee;
+    public bool inChoice;
 
     // Start is called before the first frame update
     void Start()
     {
+        inChoice = false;
         player = GameObject.FindGameObjectWithTag("Player");
         if (physics == null) { physics = this.GetComponent<Rigidbody2D>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
@@ -36,7 +38,7 @@ public class BossController : MonoBehaviour
 
         choice = 1;
         nextChoice = 0f;
-        vel = new Vector2(2.7f, 0f);
+        vel = new Vector2(2f, 0f);
         seesPlayer = false;
         this.transform.localScale = new Vector3(-1, 1, 1);
         facingLeft = true;
@@ -53,24 +55,31 @@ public class BossController : MonoBehaviour
         }
         else
         {
-            SeekPlayer();
-            if (Time.time >= nextChoice)
+            if (this.GetComponent<Boss>().alive && !inChoice)
             {
-                choice = Random.Range(0, 11);
+                SeekPlayer();
+            }
+            if (!inChoice && Time.time >= nextChoice)
+            {
+                inChoice = true;
+                choice = Random.Range(0, 8);
                 switch (choice)
                 {
                     case 0:
                         bossBlock.Block();
+                        Debug.Log("Block");
                         nextChoice = Time.time + choiceDelay;
                         break;
 
                     case 1:
                         bossDash.Dash(left: facingLeft);
+                        Debug.Log("Dash");
                         nextChoice = Time.time + choiceDelay;
                         break;
 
                     case 2:
                         bossMelee.MeleeAttack();
+                        Debug.Log("Melee");
                         nextChoice = Time.time + (choiceDelay / 3f);
                         break;
 
@@ -79,7 +88,10 @@ public class BossController : MonoBehaviour
                         break;
                 }
             }
-
+            else
+            {
+                inChoice = false;
+            }
         }
     }
 
@@ -100,7 +112,7 @@ public class BossController : MonoBehaviour
         playerX = player.transform.position.x;
         bossX = this.transform.position.x;
 
-        if (Mathf.Abs(playerX - bossX) <= bossMelee.attackRange)
+        if (Mathf.Abs(playerX - bossX) <= 2f * bossMelee.attackRange)
         {
             dirX = 0;
             if (playerX > bossX)

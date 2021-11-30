@@ -17,8 +17,8 @@ public class BossDash : MonoBehaviour
         if (animator == null) { animator = this.GetComponent<Animator>(); }
         if (bossController == null) { bossController = this.GetComponent<BossController>(); }
 
-        dashSpeed = 3.5f;
-        dashLength = 20f / 11f;
+        dashSpeed = 7f;
+        dashLength = 13f / 11f;
         inDash = false;
     }
 
@@ -27,17 +27,19 @@ public class BossDash : MonoBehaviour
     {
         if (inDash)
         {
-            this.transform.Translate(new Vector3(dashSpeed * Time.fixedDeltaTime, 0, 0));
+            this.GetComponent<Rigidbody2D>().velocity = new Vector2(dashSpeed, 0);
         }
-        if (!bossController.enabled && Time.time > (timeAttacked + dashLength))
+        if (inDash && Time.time > (timeAttacked + dashLength))
         {
-            bossController.enabled = true;
+            inDash = false;
+            this.GetComponent<BossMelee>().MeleeAttack(damage: 4);
         }
     }
 
     public void Dash(bool left)
     {
+        inDash = true;
+        animator.SetTrigger("Dash");
         if (left) { dashSpeed *= -1; }
-        this.GetComponent<BossMelee>().MeleeAttack(damage: 4);
     }
 }

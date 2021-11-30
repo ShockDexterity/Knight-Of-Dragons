@@ -45,7 +45,6 @@ public class Boss : MonoBehaviour
 
     public void TakeDamage(int incomingDamage)
     {
-        Debug.Log("invinc: " + this.GetComponent<BossBlock>().invincible);
         if (!this.GetComponent<BossBlock>().invincible)
         {
             health -= incomingDamage;

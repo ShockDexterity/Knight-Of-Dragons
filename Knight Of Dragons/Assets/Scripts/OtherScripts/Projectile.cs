@@ -60,7 +60,10 @@ public class Projectile : MonoBehaviour
                     collision.GetComponent<Enemy>().TakeDamage(damage);
                     enemiesHit++;
                     break;
-
+                case "BOSS":
+                    collision.GetComponent<Boss>().TakeDamage(damage);
+                    enemiesHit++;
+                    break;
                 // Do nothing
                 case "Player": break;
 

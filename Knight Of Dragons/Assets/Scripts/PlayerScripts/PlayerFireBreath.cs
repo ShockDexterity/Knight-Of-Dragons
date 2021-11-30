@@ -80,6 +80,14 @@ public class PlayerFireBreath : MonoBehaviour
         {
             Enemy e = enemy.GetComponent<Enemy>();
             if (e != null) { e.TakeDamage(damage); }
+            else
+            {
+                Boss boss = enemy.GetComponent<Boss>();
+                if (boss != null)
+                {
+                    boss.TakeDamage(damage);
+                }
+            }
         }
     }
 
