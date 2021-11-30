@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8135535517269417324}
   - component: {fileID: 8135535517269417315}
   - component: {fileID: 8041751866404413865}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: playerFrostProj
   m_TagString: ProjPass
   m_Icon: {fileID: 0}
