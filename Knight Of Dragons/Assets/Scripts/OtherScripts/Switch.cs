@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Switch : MonoBehaviour
 {
+    public AudioSource audioSource;
     public Sprite off, on;
     public bool toggleable;
     public bool toggled;
@@ -23,6 +24,8 @@ public class Switch : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                audioSource.Play();
+                this.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
                 this.gameObject.GetComponent<SpriteRenderer>().sprite = on;
                 toggled = true;
                 GameObject.FindGameObjectWithTag("Gate").GetComponent<GateControl>().Open();

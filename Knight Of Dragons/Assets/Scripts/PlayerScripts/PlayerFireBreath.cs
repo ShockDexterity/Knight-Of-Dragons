@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerFireBreath : MonoBehaviour
 {
+    public AudioSource audioSource;
     public FireMeter fireMeter;
     public PlayerController playerController;
     public SpriteRenderer spriteRenderer;
@@ -35,6 +36,7 @@ public class PlayerFireBreath : MonoBehaviour
         attackRange = 0.5f;
         damage = 16;
         attacking = false;
+        audioSource.mute = true;
 
         fireDelay = 5f / 11f;
         duration = 10f / 11f;
@@ -58,11 +60,13 @@ public class PlayerFireBreath : MonoBehaviour
             Attack();
             attacking = false;
             spriteRenderer.enabled = true;
+            audioSource.mute = false;
         }
         if (spriteRenderer.enabled && Time.time > (timeAttackStart + duration))
         {
             spriteRenderer.enabled = false;
             playerController.enabled = true;
+            audioSource.mute = true;
         }
     }//end Update()
 

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MageController : MonoBehaviour
 {
+    public AudioSource audioSource;
     public GameObject player;
     private float playerX;
     private float playerY;
@@ -71,7 +72,7 @@ public class MageController : MonoBehaviour
                 this.nextAttack = Time.time + this.attackRate;
 
                 GameObject projectile = Instantiate(attackPrefab, attackPoint.position, Quaternion.identity);
-
+                audioSource.Play();
                 projectile.GetComponent<Projectile>().Fire(facingLeft, 'm');
             }
         }

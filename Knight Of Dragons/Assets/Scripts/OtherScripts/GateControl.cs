@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GateControl : MonoBehaviour
 {
+    public AudioSource audioSource;
     public Animator animator;
     public float timeOpened;
     public float enterDelay;
@@ -21,21 +22,21 @@ public class GateControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (opened) { animator.SetTrigger("Opened"); }
-
-        if (opened && Time.time > timeOpened + enterDelay)
+        if (opened)
         {
-            this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            animator.SetTrigger("Opened");
         }
 
         if (opened && Time.time > (timeOpened + enterDelay))
         {
+            this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             Destroy(this.gameObject);
         }
     }
 
     public void Open()
     {
+        audioSource.Play();
         opened = true;
         timeOpened = Time.time;
     }

@@ -36,7 +36,7 @@ public class BossController : MonoBehaviour
 
         choice = 1;
         nextChoice = 0f;
-        vel = new Vector2(3f, 0f);
+        vel = new Vector2(2.7f, 0f);
         seesPlayer = false;
         this.transform.localScale = new Vector3(-1, 1, 1);
         facingLeft = true;
@@ -66,7 +66,7 @@ public class BossController : MonoBehaviour
 
                     case 1:
                         bossDash.Dash(left: facingLeft);
-                        nextChoice = Time.time + (choiceDelay / 3f);
+                        nextChoice = Time.time + choiceDelay;
                         break;
 
                     case 2:

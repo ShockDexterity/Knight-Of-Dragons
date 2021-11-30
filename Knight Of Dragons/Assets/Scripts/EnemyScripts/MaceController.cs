@@ -135,6 +135,7 @@ public class MaceController : MonoBehaviour
                 this.transform.localScale = new Vector3(-1, 1, 1);
                 this.facingLeft = true;
             }
+            idle = true;
         }
         else
         {
@@ -150,12 +151,10 @@ public class MaceController : MonoBehaviour
                 this.facingLeft = true;
                 dirX = -1;
             }
+            idle = false;
         }
         this.physics.velocity = vel * dirX;
 
-        if (dirX != 0 && idle) { Debug.Log("uh oh"); }
-        idle = (dirX != 0) ? true : false;
         animator.SetBool("Idle", idle);
-        Debug.Log("SeekPlayer Mace Idle = " + idle);
     }//end SeekPlayer()
 }//end class MaceController

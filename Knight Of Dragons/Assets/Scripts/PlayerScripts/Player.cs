@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public AudioSource audioSource;
     public CameraMotor cameraMotor;
     public Transform respawnPoint;
     private bool notMoved;
@@ -53,7 +54,7 @@ public class Player : MonoBehaviour
             physics.velocity = new Vector2(2.5f, physics.velocity.y);
             if (Time.time >= (timeOfHijack + 2f))
             {
-                SceneManager.LoadScene("YouWin");
+                SceneManager.LoadScene("Level_Boss");
             }
         }
         if (notMoved && !alive && Time.time >= (timeOfDeath + 2f))
@@ -72,6 +73,7 @@ public class Player : MonoBehaviour
 
     public void AcquireLoot(int value)
     {
+        audioSource.Play();
         if (value == 1) { coinCount += 1; }
         else { gemCount += 1; }
 

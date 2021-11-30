@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMelee : MonoBehaviour
 {
-    // public AudioSource audioSource;
+    public AudioSource audioSource;
     public Animator animator;
     public PlayerController playerController;
     public Transform attackPoint;
@@ -15,7 +15,10 @@ public class PlayerMelee : MonoBehaviour
     private float attackRange;
     private float timeAttacked;
     private float attackDelay;
+    private float soundDelay;
+    private bool playedAudio;
     private int damage;
+    private bool canAttack;
 
     // Start is called before the first frame update
     void Start()
@@ -25,31 +28,43 @@ public class PlayerMelee : MonoBehaviour
 
         attackRate = 0.6f;
         attackRange = 0.5f;
-        attackDelay = 0.5f;
+        attackDelay = 14f / 14f;
+        soundDelay = 6f / 14f;
+        playedAudio = true;
         damage = 2;
+        canAttack = true;
     }//end Start()
 
     // Update is called once per frame
     void Update()
     {
-        if (!playerController.jumping && Input.GetMouseButtonDown(0) && (Time.time >= nextAttack))
+        if (canAttack)
         {
-            nextAttack = Time.time + attackRate;
-            // audioSource.Play();
-            Attack();
-            timeAttacked = Time.time;
+            canAttack = false;
+            if (!playerController.jumping && Input.GetMouseButtonDown(0) && (Time.time >= nextAttack))
+            {
+                animator.SetTrigger("Melee");
+                playedAudio = false;
+                nextAttack = Time.time + attackRate;
+                timeAttacked = Time.time;
+            }
+
         }
-        if (!playerController.enabled && Time.time > (timeAttacked + attackDelay))
+        else if (Time.time >= (timeAttacked + attackDelay))
         {
-            playerController.enabled = true;
+            canAttack = true;
+        }
+        if (!playedAudio && Time.time > (timeAttacked + soundDelay))
+        {
+            Attack();
+            audioSource.Play();
+            playedAudio = true;
         }
     }//end FixedUpdate()
 
     private void Attack()
     {
-        playerController.enabled = false;
-
-        animator.SetTrigger("Melee");
+        // playerController.enabled = false;
 
         Collider2D[] enemiesHit = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         foreach (var enemy in enemiesHit)
