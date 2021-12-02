@@ -361,6 +361,7 @@ GameObject:
   - component: {fileID: 553069066}
   - component: {fileID: 553069067}
   - component: {fileID: 553069068}
+  - component: {fileID: 553069069}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -575,6 +576,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &553069069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553069062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5a825c08caec074fb3f65e4dbf0011e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paused: 0
+  filter: {fileID: 0}
+  text: {fileID: 0}
 --- !u!1 &893073322
 GameObject:
   m_ObjectHideFlags: 0
@@ -2599,6 +2615,7 @@ MonoBehaviour:
   bossBlock: {fileID: 2037917410}
   bossDash: {fileID: 2037917408}
   bossMelee: {fileID: 2037917407}
+  inChoice: 0
 --- !u!114 &2037917410
 MonoBehaviour:
   m_ObjectHideFlags: 0

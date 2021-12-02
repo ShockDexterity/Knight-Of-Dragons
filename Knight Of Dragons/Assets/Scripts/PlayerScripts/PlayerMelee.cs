@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMelee : MonoBehaviour
 {
+    public PauseMenu pauseMenu;
     public AudioSource audioSource;
     public Animator animator;
     public PlayerController playerController;
@@ -23,6 +24,7 @@ public class PlayerMelee : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pauseMenu = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PauseMenu>();
         if (animator == null) { animator = this.GetComponent<Animator>(); }
         if (playerController == null) { playerController = this.GetComponent<PlayerController>(); }
 
@@ -39,27 +41,30 @@ public class PlayerMelee : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canAttack)
+        if (!pauseMenu.paused)
         {
-            canAttack = false;
-            if (!playerController.jumping && Input.GetMouseButtonDown(0) && (Time.time >= nextAttack))
+            if (canAttack)
             {
-                animator.SetTrigger("Melee");
-                playedAudio = false;
-                nextAttack = Time.time + attackRate;
-                timeAttacked = Time.time;
-            }
+                canAttack = false;
+                if (!playerController.jumping && Input.GetMouseButtonDown(0) && (Time.time >= nextAttack))
+                {
+                    animator.SetTrigger("Melee");
+                    playedAudio = false;
+                    nextAttack = Time.time + attackRate;
+                    timeAttacked = Time.time;
+                }
 
-        }
-        else if (Time.time >= (timeAttacked + attackDelay))
-        {
-            canAttack = true;
-        }
-        if (!playedAudio && Time.time > (timeAttacked + soundDelay))
-        {
-            Attack();
-            audioSource.Play();
-            playedAudio = true;
+            }
+            else if (Time.time >= (timeAttacked + attackDelay))
+            {
+                canAttack = true;
+            }
+            if (!playedAudio && Time.time > (timeAttacked + soundDelay))
+            {
+                Attack();
+                audioSource.Play();
+                playedAudio = true;
+            }
         }
     }//end FixedUpdate()
 

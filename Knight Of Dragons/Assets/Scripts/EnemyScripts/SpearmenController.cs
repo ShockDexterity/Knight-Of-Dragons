@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpearmenController : MonoBehaviour
 {
+    public PauseMenu pauseMenu;
     public GameObject player;
     private float playerX;
     private float playerY;
@@ -27,6 +28,7 @@ public class SpearmenController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pauseMenu = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PauseMenu>();
         // Grabbing needed components
         player = GameObject.FindGameObjectWithTag("Player");
         physics = this.gameObject.GetComponent<Rigidbody2D>();
@@ -47,30 +49,33 @@ public class SpearmenController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        // While the knight doesn't see the player
-        if (!seesPlayer)
+        if (!pauseMenu.paused)
         {
-            // Update movement
-            if (moveCounter > moveRate)
+            // While the knight doesn't see the player
+            if (!seesPlayer)
             {
-                ChangeDirection();
-                moveCounter = 0f;
+                // Update movement
+                if (moveCounter > moveRate)
+                {
+                    ChangeDirection();
+                    moveCounter = 0f;
+                }
+
+                physics.velocity = new Vector2(vel.x * dirX, physics.velocity.y);
+
+                moveCounter += Time.fixedDeltaTime;
+
+                FindPlayer();
             }
-
-            physics.velocity = new Vector2(vel.x * dirX, physics.velocity.y);
-
-            moveCounter += Time.fixedDeltaTime;
-
-            FindPlayer();
-        }
-        else
-        {
-            SeekPlayer();
-
-            if (Time.time > nextAttack)
+            else
             {
-                nextAttack = Time.time + attackRate;
-                spearmenAttack.Attack();
+                SeekPlayer();
+
+                if (Time.time > nextAttack)
+                {
+                    nextAttack = Time.time + attackRate;
+                    spearmenAttack.Attack();
+                }
             }
         }
     }//end Update()

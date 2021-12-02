@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ArcherController : MonoBehaviour
 {
+    public PauseMenu pauseMenu;
     public GameObject player;
     private float playerX;
     private float playerY;
@@ -33,6 +34,7 @@ public class ArcherController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pauseMenu = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PauseMenu>();
         player = GameObject.FindGameObjectWithTag("Player");
         if (physics == null) { physics = this.GetComponent<Rigidbody2D>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
@@ -49,37 +51,40 @@ public class ArcherController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!seesPlayer)
+        if (!pauseMenu.paused)
         {
-            if (moveCounter > moveRate)
+            if (!seesPlayer)
             {
-                ChangeDirection();
-                moveCounter = 0f;
+                if (moveCounter > moveRate)
+                {
+                    ChangeDirection();
+                    moveCounter = 0f;
+                }
+
+                physics.velocity = new Vector2(vel.x * dirX, physics.velocity.y);
+
+                moveCounter += Time.fixedDeltaTime;
+
+                FindPlayer();
             }
-
-            physics.velocity = new Vector2(vel.x * dirX, physics.velocity.y);
-
-            moveCounter += Time.fixedDeltaTime;
-
-            FindPlayer();
-        }
-        else
-        {
-            if (!idle) { idle = true; }
-            SeekPlayer();
-
-            if (Time.time > nextAttack)
+            else
             {
-                animator.SetTrigger("Attacking");
-                nextAttack = Time.time + attackRate;
-                timeFired = Time.time;
-                inAttack = true;
-            }
-            if (inAttack && Time.time > timeFired + attackDelay)
-            {
-                inAttack = false;
-                GameObject arrow = Instantiate(attackPrefab, attackPoint.position, Quaternion.identity);
-                arrow.GetComponent<Arrow>().Fire();
+                if (!idle) { idle = true; }
+                SeekPlayer();
+
+                if (Time.time > nextAttack)
+                {
+                    animator.SetTrigger("Attacking");
+                    nextAttack = Time.time + attackRate;
+                    timeFired = Time.time;
+                    inAttack = true;
+                }
+                if (inAttack && Time.time > timeFired + attackDelay)
+                {
+                    inAttack = false;
+                    GameObject arrow = Instantiate(attackPrefab, attackPoint.position, Quaternion.identity);
+                    arrow.GetComponent<Arrow>().Fire();
+                }
             }
         }
     }//end Update()

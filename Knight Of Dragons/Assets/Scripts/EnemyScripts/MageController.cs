@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MageController : MonoBehaviour
 {
+    public PauseMenu pauseMenu;
     public AudioSource audioSource;
     public GameObject player;
     private float playerX;
@@ -30,6 +31,7 @@ public class MageController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pauseMenu = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PauseMenu>();
         player = GameObject.FindGameObjectWithTag("Player");
         if (physics == null) { physics = this.GetComponent<Rigidbody2D>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
@@ -45,35 +47,38 @@ public class MageController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        // While the mage doesn't see the player
-        if (!seesPlayer)
+        if (!pauseMenu.paused)
         {
-            // Update movement
-            if (moveCounter >= moveRate)
+            // While the mage doesn't see the player
+            if (!seesPlayer)
             {
-                ChangeDirection();
-                moveCounter = 0f;
+                // Update movement
+                if (moveCounter >= moveRate)
+                {
+                    ChangeDirection();
+                    moveCounter = 0f;
+                }
+
+                physics.velocity = vel * dirX;
+
+                moveCounter += Time.fixedDeltaTime;
+
+                FindPlayer();
             }
-
-            physics.velocity = vel * dirX;
-
-            moveCounter += Time.fixedDeltaTime;
-
-            FindPlayer();
-        }
-        else
-        {
-            if (!idle) { idle = true; }
-            SeekPlayer();
-
-            if (Time.time > nextAttack)
+            else
             {
-                animator.SetTrigger("Attacking");
-                this.nextAttack = Time.time + this.attackRate;
+                if (!idle) { idle = true; }
+                SeekPlayer();
 
-                GameObject projectile = Instantiate(attackPrefab, attackPoint.position, Quaternion.identity);
-                audioSource.Play();
-                projectile.GetComponent<Projectile>().Fire(facingLeft, 'm');
+                if (Time.time > nextAttack)
+                {
+                    animator.SetTrigger("Attacking");
+                    this.nextAttack = Time.time + this.attackRate;
+
+                    GameObject projectile = Instantiate(attackPrefab, attackPoint.position, Quaternion.identity);
+                    audioSource.Play();
+                    projectile.GetComponent<Projectile>().Fire(facingLeft, 'm');
+                }
             }
         }
     }//end Update()

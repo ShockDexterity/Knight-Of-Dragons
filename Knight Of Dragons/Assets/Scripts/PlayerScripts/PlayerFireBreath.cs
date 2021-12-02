@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerFireBreath : MonoBehaviour
 {
+    public PauseMenu pauseMenu;
     public AudioSource audioSource;
     public FireMeter fireMeter;
     public PlayerController playerController;
@@ -26,6 +27,7 @@ public class PlayerFireBreath : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pauseMenu = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PauseMenu>();
         if (playerController == null) { playerController = this.GetComponent<PlayerController>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
         if (spriteRenderer == null) { spriteRenderer = GameObject.Find("fireBreath").GetComponent<SpriteRenderer>(); }
@@ -45,28 +47,31 @@ public class PlayerFireBreath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!playerController.jumping && Input.GetKeyDown(KeyCode.F) && (Time.time > nextAttack))
+        if (!pauseMenu.paused)
         {
-            nextAttack = Time.time + attackRate;
-            timeAttackStart = Time.time;
-            attacking = true;
+            if (!playerController.jumping && Input.GetKeyDown(KeyCode.F) && (Time.time > nextAttack))
+            {
+                nextAttack = Time.time + attackRate;
+                timeAttackStart = Time.time;
+                attacking = true;
 
-            animator.SetTrigger("FireAttack");
-            fireMeter.Cooldown();
-        }
+                animator.SetTrigger("FireAttack");
+                fireMeter.Cooldown();
+            }
 
-        if (attacking && Time.time > (timeAttackStart + fireDelay))
-        {
-            Attack();
-            attacking = false;
-            spriteRenderer.enabled = true;
-            audioSource.mute = false;
-        }
-        if (spriteRenderer.enabled && Time.time > (timeAttackStart + duration))
-        {
-            spriteRenderer.enabled = false;
-            playerController.enabled = true;
-            audioSource.mute = true;
+            if (attacking && Time.time > (timeAttackStart + fireDelay))
+            {
+                Attack();
+                attacking = false;
+                spriteRenderer.enabled = true;
+                audioSource.mute = false;
+            }
+            if (spriteRenderer.enabled && Time.time > (timeAttackStart + duration))
+            {
+                spriteRenderer.enabled = false;
+                playerController.enabled = true;
+                audioSource.mute = true;
+            }
         }
     }//end Update()
 

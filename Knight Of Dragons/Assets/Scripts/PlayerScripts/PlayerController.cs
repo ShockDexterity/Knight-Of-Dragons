@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public PauseMenu pauseMenu;
     private Rigidbody2D physics;
     private float speed;
     private Vector2 jumpForce;
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pauseMenu = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PauseMenu>();
         if (physics == null) { physics = this.GetComponent<Rigidbody2D>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
 
@@ -35,55 +37,65 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Debug.Log("jumping: " + jumping);
-        // Debug.Log("canJump: " + canJump);
-        if (!jumping && (canJump || physics.velocity.y > -0.2f))
+        if (!pauseMenu.paused)
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
+            if (physics.isKinematic) { physics.isKinematic = false; }
+            // Debug.Log("jumping: " + jumping);
+            // Debug.Log("canJump: " + canJump);
+            if (!jumping && (canJump || physics.velocity.y > -0.2f))
             {
-                timeJumped = Time.time;
-                idle = false;
-                jumping = true;
-                inJumpDelay = true;
-                animator.SetTrigger("Jumped");
-                this.GetComponent<PlayerBlock>().enabled = false;
+                if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
+                {
+                    timeJumped = Time.time;
+                    idle = false;
+                    jumping = true;
+                    inJumpDelay = true;
+                    animator.SetTrigger("Jumped");
+                    this.GetComponent<PlayerBlock>().enabled = false;
+                }
             }
-        }
-        if (inJumpDelay)
-        {
-            physics.velocity = Vector2.zero;
-            if (Time.time > (timeJumped + jumpDelay))
+            if (inJumpDelay)
             {
-                physics.AddForce(jumpForce, ForceMode2D.Impulse);
-                inJumpDelay = false;
+                physics.velocity = Vector2.zero;
+                if (Time.time > (timeJumped + jumpDelay))
+                {
+                    physics.AddForce(jumpForce, ForceMode2D.Impulse);
+                    inJumpDelay = false;
+                }
+            }
+            else
+            {
+                dirX = (int)Input.GetAxisRaw("Horizontal");
+
+                switch (dirX)
+                {
+                    case 1:
+                        facingLeft = false;
+                        idle = false;
+                        this.transform.localScale = new Vector3(1, 1, 1);
+                        break;
+
+                    case 0:
+                        idle = true;
+                        break;
+
+                    case -1:
+                        facingLeft = true;
+                        idle = false;
+                        this.transform.localScale = new Vector3(-1, 1, 1);
+                        break;
+                }
+                if (!jumping) { animator.SetBool("Idle", idle); }
+
+                physics.velocity = new Vector2(speed * dirX, physics.velocity.y);
+                animator.SetFloat("yVel", physics.velocity.y);
             }
         }
         else
         {
-            dirX = (int)Input.GetAxisRaw("Horizontal");
-
-            switch (dirX)
-            {
-                case 1:
-                    facingLeft = false;
-                    idle = false;
-                    this.transform.localScale = new Vector3(1, 1, 1);
-                    break;
-
-                case 0:
-                    idle = true;
-                    break;
-
-                case -1:
-                    facingLeft = true;
-                    idle = false;
-                    this.transform.localScale = new Vector3(-1, 1, 1);
-                    break;
-            }
-            if (!jumping) { animator.SetBool("Idle", idle); }
-
-            physics.velocity = new Vector2(speed * dirX, physics.velocity.y);
-            animator.SetFloat("yVel", physics.velocity.y);
+            if (!physics.isKinematic) { physics.isKinematic = true; }
+            if (!animator.GetBool("Idle")) { animator.SetBool("Idle", true); }
+            physics.velocity = Vector2.zero;
         }
     }//end Update()
 
