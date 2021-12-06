@@ -39,7 +39,7 @@ public class Boss : MonoBehaviour
         }
         if (!alive)
         {
-            if (Time.time >= (deathTime + deathLength)) { SceneManager.LoadScene("YouWin"); }
+            if (Time.time >= (deathTime + deathLength)) { SceneManager.LoadScene("Outro"); }
         }
     }
 
@@ -52,9 +52,9 @@ public class Boss : MonoBehaviour
             GameObject.Find("BossHealth").GetComponent<BossBar>().UpdateHealth(health);
         }
 
-        if (health < 1)
+        if (alive && health < 1)
         {
-            this.GetComponent<BossController>().enabled = false;
+            GameObject.Find(name: "boss_death").GetComponent<AudioSource>().Play();
             deathTime = Time.time;
             alive = false;
             animator.SetBool("Dead", true);

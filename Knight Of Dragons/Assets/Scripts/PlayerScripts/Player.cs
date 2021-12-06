@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public AudioSource audioSource;
+    public AudioSource lootSound;
+    public AudioSource damageSound;
     public CameraMotor cameraMotor;
     public Transform respawnPoint;
     private bool notMoved;
@@ -32,6 +33,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         notMoved = true;
+        damageSound = GameObject.Find(name: "take_damage").GetComponent<AudioSource>();
         if (cameraMotor == null) { cameraMotor = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraMotor>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
         if (physics == null) { physics = this.GetComponent<Rigidbody2D>(); }
@@ -73,7 +75,7 @@ public class Player : MonoBehaviour
 
     public void AcquireLoot(int value)
     {
-        audioSource.Play();
+        lootSound.Play();
         if (value == 1) { coinCount += 1; }
         else { gemCount += 1; }
 
@@ -93,6 +95,7 @@ public class Player : MonoBehaviour
     {
         if (alive && !this.GetComponent<PlayerBlock>().blocking)
         {
+            damageSound.Play();
             health -= incomingDamage;
             healthController.UpdateHealth((health > 0) ? health / 2 : 0);
         }
@@ -105,6 +108,7 @@ public class Player : MonoBehaviour
 
     public void Die()
     {
+        GameObject.FindGameObjectWithTag(tag: "MainCamera").GetComponent<AudioSource>().Stop();
         alive = false;
         healthController.UpdateHealth(h: 0);
         animator.SetBool("Died", true);

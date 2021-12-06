@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public PauseMenu pauseMenu;
+    public AudioSource jump;
     private Rigidbody2D physics;
     private float speed;
     private Vector2 jumpForce;
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        jump = GameObject.Find(name: "jump").GetComponent<AudioSource>();
         pauseMenu = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PauseMenu>();
         if (physics == null) { physics = this.GetComponent<Rigidbody2D>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
@@ -40,12 +42,11 @@ public class PlayerController : MonoBehaviour
         if (!pauseMenu.paused)
         {
             if (physics.isKinematic) { physics.isKinematic = false; }
-            // Debug.Log("jumping: " + jumping);
-            // Debug.Log("canJump: " + canJump);
             if (!jumping && (canJump || physics.velocity.y > -0.2f))
             {
                 if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
                 {
+                    jump.Play();
                     timeJumped = Time.time;
                     idle = false;
                     jumping = true;

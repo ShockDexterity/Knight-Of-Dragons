@@ -14,10 +14,7 @@ public class CameraMotor : MonoBehaviour
     {
         boss = (SceneManager.GetActiveScene().name == "Level_Boss") ? true : false;
         followPlayer = true;
-        if (lookAt == null)
-        {
-            lookAt = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        }
+        if (lookAt == null) { lookAt = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>(); }
     }
 
     // Update is called once per frame

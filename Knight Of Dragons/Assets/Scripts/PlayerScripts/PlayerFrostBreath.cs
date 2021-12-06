@@ -79,6 +79,7 @@ public class PlayerFrostBreath : MonoBehaviour
 
                 if (attacking && Time.time > timeAttackStart + iceDelay)
                 {
+                    GameObject.Find(name: "ice_breath").GetComponent<AudioSource>().Play();
                     attacking = false;
                     Attack();
                 }

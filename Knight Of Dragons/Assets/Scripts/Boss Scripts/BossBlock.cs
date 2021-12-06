@@ -39,6 +39,7 @@ public class BossBlock : MonoBehaviour
 
     public void Block()
     {
+        GameObject.Find(name: "boss_shield").GetComponent<AudioSource>().Play();
         this.GetComponent<BossDash>().enabled = false;
         this.GetComponent<BossMelee>().enabled = false;
         this.GetComponent<BossController>().enabled = false;

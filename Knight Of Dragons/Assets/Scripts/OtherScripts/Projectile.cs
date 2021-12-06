@@ -58,11 +58,12 @@ public class Projectile : MonoBehaviour
                 // Damage the enemy it hits
                 case "Enemy":
                     collision.GetComponent<Enemy>().TakeDamage(damage);
-                    enemiesHit++;
+                    Destroy(this.gameObject);
                     break;
+
                 case "BOSS":
                     collision.GetComponent<Boss>().TakeDamage(damage);
-                    enemiesHit++;
+                    Destroy(this.gameObject);
                     break;
                 // Do nothing
                 case "Player": break;

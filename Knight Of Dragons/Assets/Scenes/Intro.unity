@@ -216,6 +216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1412874803}
   - component: {fileID: 1412874802}
+  - component: {fileID: 1412874804}
   m_Layer: 0
   m_Name: KOD_Intro
   m_TagString: Untagged
@@ -247,7 +248,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0.036
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
@@ -272,3 +273,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1412874804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412874801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be8daf399128b7b4caee3214a428d241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clipLength: 0

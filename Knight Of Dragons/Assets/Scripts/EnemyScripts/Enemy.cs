@@ -19,17 +19,17 @@ public class Enemy : MonoBehaviour
     private bool underAttack;
     private float hurtDelay;
     private float timeHurt;
-    private Scene scene;
+    // private Scene scene;
     private sbyte id;
 
     // Start is called before the first frame update
     void Start()
     {
-        scene = SceneManager.GetActiveScene();
+        // scene = SceneManager.GetActiveScene();
         spriteRenderer = this.GetComponent<SpriteRenderer>();
         center = spriteRenderer.size.y / 2f;
 
-        deathDelay = 8f / 11f;
+        deathDelay = 8f / 12f;
         hurtDelay = 0.3f;
         alive = true;
         lootDropped = false;

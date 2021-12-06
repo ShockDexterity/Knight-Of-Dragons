@@ -44,6 +44,7 @@ public class TreasureChest : MonoBehaviour
     {
         if (!opened && lootable && !looted && Input.GetKeyDown(KeyCode.E))
         {
+            GameObject.Find(name: "chest_open").GetComponent<AudioSource>().Play();
             opened = true;
             animator.SetTrigger("Opened");
             timeLootable = Time.time + lootDelay;

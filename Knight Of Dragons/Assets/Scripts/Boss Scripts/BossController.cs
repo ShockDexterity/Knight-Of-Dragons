@@ -20,6 +20,7 @@ public class BossController : MonoBehaviour
     private const float choiceDelay = 5f;
     private float nextChoice;
 
+    public Boss boss;
     public BossBlock bossBlock;
     public BossDash bossDash;
     public BossMelee bossMelee;
@@ -32,6 +33,7 @@ public class BossController : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         if (physics == null) { physics = this.GetComponent<Rigidbody2D>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
+        if (boss == null) { boss = this.GetComponent<Boss>(); }
         if (bossBlock == null) { bossBlock = this.GetComponent<BossBlock>(); }
         if (bossDash == null) { bossDash = this.GetComponent<BossDash>(); }
         if (bossMelee == null) { bossMelee = this.GetComponent<BossMelee>(); }
@@ -49,48 +51,51 @@ public class BossController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!seesPlayer)
+        if (boss.alive)
         {
-            FindPlayer();
-        }
-        else
-        {
-            if (this.GetComponent<Boss>().alive && !inChoice)
+            if (!seesPlayer)
             {
-                SeekPlayer();
-            }
-            if (!inChoice && Time.time >= nextChoice)
-            {
-                inChoice = true;
-                choice = Random.Range(0, 8);
-                switch (choice)
-                {
-                    case 0:
-                        bossBlock.Block();
-                        Debug.Log("Block");
-                        nextChoice = Time.time + choiceDelay;
-                        break;
-
-                    case 1:
-                        bossDash.Dash(left: facingLeft);
-                        Debug.Log("Dash");
-                        nextChoice = Time.time + choiceDelay;
-                        break;
-
-                    case 2:
-                        bossMelee.MeleeAttack();
-                        Debug.Log("Melee");
-                        nextChoice = Time.time + (choiceDelay / 3f);
-                        break;
-
-                    default:
-                        nextChoice = Time.time + (choiceDelay / 3f);
-                        break;
-                }
+                FindPlayer();
             }
             else
             {
-                inChoice = false;
+                if (this.GetComponent<Boss>().alive && !inChoice)
+                {
+                    SeekPlayer();
+                }
+                if (!inChoice && Time.time >= nextChoice)
+                {
+                    inChoice = true;
+                    choice = Random.Range(0, 8);
+                    switch (choice)
+                    {
+                        case 0:
+                            bossBlock.Block();
+                            Debug.Log("Block");
+                            nextChoice = Time.time + choiceDelay;
+                            break;
+
+                        case 1:
+                            bossDash.Dash(left: facingLeft);
+                            Debug.Log("Dash");
+                            nextChoice = Time.time + choiceDelay;
+                            break;
+
+                        case 2:
+                            bossMelee.MeleeAttack();
+                            Debug.Log("Melee");
+                            nextChoice = Time.time + (choiceDelay / 3f);
+                            break;
+
+                        default:
+                            nextChoice = Time.time + (choiceDelay / 3f);
+                            break;
+                    }
+                }
+                else
+                {
+                    inChoice = false;
+                }
             }
         }
     }

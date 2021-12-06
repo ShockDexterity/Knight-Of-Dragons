@@ -43,7 +43,7 @@ public class TrashFight : MonoBehaviour
         // Debug.Log("TriggerExit");
         if (collision.tag == "Player")
         {
-            if (player.position.x > 43f && player.position.x < 46f)
+            if (player.position.x > 42f && player.position.x < 46f)
             {
                 // Debug.Log("if");
                 timeEntered = Time.time;
@@ -56,10 +56,6 @@ public class TrashFight : MonoBehaviour
                     int r = Random.Range(0, enemies.Length);
                     Instantiate(enemies[r], spawnPoint.position, Quaternion.identity);
                 }
-            }
-            else if (player.position.x > 82f)
-            {
-                PlayerLeft();
             }
         }
     }
