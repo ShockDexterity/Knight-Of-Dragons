@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -11,11 +12,13 @@ public class PauseMenu : MonoBehaviour
     private Vector2 pvel;
     public AudioSource pauseEffect;
     public AudioSource mainMusic;
+    private bool hasAudio;
 
     // Start is called before the first frame update
     void Start()
     {
-        mainMusic = this.GetComponent<AudioSource>();
+        hasAudio = (SceneManager.GetActiveScene().name != "Level_0") ? true : false;
+        if (hasAudio) { mainMusic = this.GetComponent<AudioSource>(); }
         pauseEffect = GameObject.Find(name: "Pause").GetComponent<AudioSource>();
         filter = GameObject.Find(name: "PauseFilter").GetComponent<Image>();
         text = GameObject.Find(name: "PauseText").GetComponent<Text>();
@@ -30,7 +33,7 @@ public class PauseMenu : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.P))
             {
-                mainMusic.Pause();
+                if (hasAudio) { mainMusic.Pause(); }
                 pauseEffect.Play();
                 pvel = GameObject.FindGameObjectWithTag(tag: "Player").GetComponent<Rigidbody2D>().velocity;
                 filter.enabled = text.enabled = paused = true;
@@ -41,7 +44,7 @@ public class PauseMenu : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.P))
             {
                 pauseEffect.Play();
-                mainMusic.UnPause();
+                if (hasAudio) { mainMusic.UnPause(); }
                 filter.enabled = text.enabled = paused = false;
                 GameObject.FindGameObjectWithTag(tag: "Player").GetComponent<Rigidbody2D>().velocity = pvel;
             }
