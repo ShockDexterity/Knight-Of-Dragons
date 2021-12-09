@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     private float timeOfDeath;
 
     public GemDisplay gemDisplay;
-    private int totalLoot;
+    public int totalLoot;
     private int coinCount;
     private int gemCount;
 

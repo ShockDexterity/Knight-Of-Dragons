@@ -8,7 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     public bool paused;
     public Image filter;
-    public Text text;
+    public List<Text> texts;
     private Vector2 pvel;
     public AudioSource pauseEffect;
     public AudioSource mainMusic;
@@ -21,8 +21,10 @@ public class PauseMenu : MonoBehaviour
         if (hasAudio) { mainMusic = this.GetComponent<AudioSource>(); }
         pauseEffect = GameObject.Find(name: "Pause").GetComponent<AudioSource>();
         filter = GameObject.Find(name: "PauseFilter").GetComponent<Image>();
-        text = GameObject.Find(name: "PauseText").GetComponent<Text>();
-        filter.enabled = text.enabled = paused = false;
+        texts.Add(GameObject.Find(name: "PauseText").GetComponent<Text>());
+        texts.Add(GameObject.Find(name: "PauseControls").GetComponent<Text>());
+        filter.enabled = paused = false;
+        foreach (var t in texts) { t.enabled = false; }
         pvel = Vector2.zero;
     }
 
@@ -36,7 +38,8 @@ public class PauseMenu : MonoBehaviour
                 if (hasAudio) { mainMusic.Pause(); }
                 pauseEffect.Play();
                 pvel = GameObject.FindGameObjectWithTag(tag: "Player").GetComponent<Rigidbody2D>().velocity;
-                filter.enabled = text.enabled = paused = true;
+                filter.enabled = paused = true;
+                foreach (var t in texts) { t.enabled = true; }
             }
         }
         else
@@ -45,7 +48,8 @@ public class PauseMenu : MonoBehaviour
             {
                 pauseEffect.Play();
                 if (hasAudio) { mainMusic.UnPause(); }
-                filter.enabled = text.enabled = paused = false;
+                filter.enabled = paused = false;
+                foreach (var t in texts) { t.enabled = false; }
                 GameObject.FindGameObjectWithTag(tag: "Player").GetComponent<Rigidbody2D>().velocity = pvel;
             }
         }

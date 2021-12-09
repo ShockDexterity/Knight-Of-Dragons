@@ -2971,7 +2971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paused: 0
   filter: {fileID: 0}
-  text: {fileID: 0}
+  texts: []
   pauseEffect: {fileID: 0}
   mainMusic: {fileID: 0}
 --- !u!1001 &381868327
@@ -5192,11 +5192,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6134861394488319415, guid: 3251842289c6b894da193cd24cdcb2d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.03
+      value: 137.7
       objectReference: {fileID: 0}
     - target: {fileID: 6134861394488319415, guid: 3251842289c6b894da193cd24cdcb2d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.08
+      value: 48.2
       objectReference: {fileID: 0}
     - target: {fileID: 6134861394488319415, guid: 3251842289c6b894da193cd24cdcb2d6, type: 3}
       propertyPath: m_LocalPosition.z
