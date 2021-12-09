@@ -40,6 +40,14 @@ public class BossDash : MonoBehaviour
     {
         inDash = true;
         animator.SetTrigger("Dash");
-        if (left) { dashSpeed *= -1; }
+        dashSpeed = (!left) ? 7f : -7f;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player" && inDash)
+        {
+            GameObject.FindGameObjectWithTag(tag: "Player").GetComponent<Player>().TakeDamage(4);
+        }
     }
 }

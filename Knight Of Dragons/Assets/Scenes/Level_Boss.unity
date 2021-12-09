@@ -590,7 +590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paused: 0
   filter: {fileID: 0}
-  text: {fileID: 0}
+  texts: []
   pauseEffect: {fileID: 0}
   mainMusic: {fileID: 0}
 --- !u!1 &890631992
@@ -793,7 +793,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 28, y: 6, z: 0}
+  m_ChunkCullingBounds: {x: 36, y: 13, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -2765,7 +2765,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.06106028}

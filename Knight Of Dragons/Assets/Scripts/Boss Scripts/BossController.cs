@@ -51,6 +51,7 @@ public class BossController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        Debug.Log(facingLeft);
         if (boss.alive)
         {
             if (!seesPlayer)
@@ -82,7 +83,7 @@ public class BossController : MonoBehaviour
                             break;
 
                         case 2:
-                            bossMelee.MeleeAttack();
+                            bossMelee.MeleeAttack(damage: 4);
                             Debug.Log("Melee");
                             nextChoice = Time.time + (choiceDelay / 3f);
                             break;
@@ -117,7 +118,7 @@ public class BossController : MonoBehaviour
         playerX = player.transform.position.x;
         bossX = this.transform.position.x;
 
-        if (Mathf.Abs(playerX - bossX) <= 2f * bossMelee.attackRange)
+        if (Mathf.Abs(playerX - bossX) <= 0.504f)
         {
             dirX = 0;
             if (playerX > bossX)
