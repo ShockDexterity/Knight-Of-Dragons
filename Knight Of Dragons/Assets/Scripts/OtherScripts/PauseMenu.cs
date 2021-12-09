@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     public bool paused;
     public Image filter;
     public List<Text> texts;
+    public List<Image> keys;
     private Vector2 pvel;
     public AudioSource pauseEffect;
     public AudioSource mainMusic;
@@ -23,8 +24,20 @@ public class PauseMenu : MonoBehaviour
         filter = GameObject.Find(name: "PauseFilter").GetComponent<Image>();
         texts.Add(GameObject.Find(name: "PauseText").GetComponent<Text>());
         texts.Add(GameObject.Find(name: "PauseControls").GetComponent<Text>());
+
+        keys.Add(GameObject.Find(name: "W").GetComponent<Image>());
+        keys.Add(GameObject.Find(name: "A").GetComponent<Image>());
+        keys.Add(GameObject.Find(name: "D").GetComponent<Image>());
+        keys.Add(GameObject.Find(name: "Space").GetComponent<Image>());
+        keys.Add(GameObject.Find(name: "E").GetComponent<Image>());
+        keys.Add(GameObject.Find(name: "F").GetComponent<Image>());
+        keys.Add(GameObject.Find(name: "G").GetComponent<Image>());
+        keys.Add(GameObject.Find(name: "R").GetComponent<Image>());
+        keys.Add(GameObject.Find(name: "L").GetComponent<Image>());
+
         filter.enabled = paused = false;
         foreach (var t in texts) { t.enabled = false; }
+        foreach (var k in keys) { k.enabled = false; }
         pvel = Vector2.zero;
     }
 
@@ -40,6 +53,7 @@ public class PauseMenu : MonoBehaviour
                 pvel = GameObject.FindGameObjectWithTag(tag: "Player").GetComponent<Rigidbody2D>().velocity;
                 filter.enabled = paused = true;
                 foreach (var t in texts) { t.enabled = true; }
+                foreach (var k in keys) { k.enabled = true; }
             }
         }
         else
@@ -50,6 +64,7 @@ public class PauseMenu : MonoBehaviour
                 if (hasAudio) { mainMusic.UnPause(); }
                 filter.enabled = paused = false;
                 foreach (var t in texts) { t.enabled = false; }
+                foreach (var k in keys) { k.enabled = false; }
                 GameObject.FindGameObjectWithTag(tag: "Player").GetComponent<Rigidbody2D>().velocity = pvel;
             }
         }
