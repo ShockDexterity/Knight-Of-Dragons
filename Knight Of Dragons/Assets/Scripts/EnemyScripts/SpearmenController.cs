@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpearmenController : MonoBehaviour
 {
+    public Enemy enemy;
     public PauseMenu pauseMenu;
     public GameObject player;
     private float playerX;
@@ -29,8 +30,8 @@ public class SpearmenController : MonoBehaviour
     void Start()
     {
         pauseMenu = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PauseMenu>();
-        // Grabbing needed components
         player = GameObject.FindGameObjectWithTag("Player");
+        if (enemy == null) { enemy = this.GetComponent<Enemy>(); }
         physics = this.gameObject.GetComponent<Rigidbody2D>();
         animator = this.gameObject.GetComponent<Animator>();
         spearmenAttack = this.gameObject.GetComponent<SpearmenAttack>();
@@ -49,7 +50,7 @@ public class SpearmenController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!pauseMenu.paused)
+        if (!pauseMenu.paused || !enemy.alive)
         {
             // While the knight doesn't see the player
             if (!seesPlayer)

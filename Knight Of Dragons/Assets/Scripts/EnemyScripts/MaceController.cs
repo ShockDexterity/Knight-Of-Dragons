@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MaceController : MonoBehaviour
 {
+    public Enemy enemy;
     public PauseMenu pauseMenu;
     public GameObject player;
     private float playerX;
@@ -31,6 +32,7 @@ public class MaceController : MonoBehaviour
     {
         pauseMenu = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PauseMenu>();
         player = GameObject.FindGameObjectWithTag("Player");
+        if (enemy == null) { enemy = this.GetComponent<Enemy>(); }
         if (physics == null) { physics = this.GetComponent<Rigidbody2D>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
         if (maceAttack == null) { maceAttack = this.GetComponent<MaceAttack>(); }
@@ -45,7 +47,7 @@ public class MaceController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!pauseMenu.paused)
+        if (!pauseMenu.paused || !enemy.alive)
         {
             if (!seesPlayer)
             {

@@ -168,9 +168,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 7454224706298002217, guid: eef8c1e7a3cdf4d45ac7a72924648f29, type: 3}
+  potion: {fileID: 1953335579671190916, guid: 0d3250c5fb213dd43a69f9f63f562a2e, type: 3}
   animator: {fileID: 8986213089048827212}
   spriteRenderer: {fileID: 8986213089048827210}
-  coinSpawnPoint: {x: 0, y: 0, z: 0}
+  alive: 0
 --- !u!114 &6023893626483387845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763666e132e152d409358406736252ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
+  pauseMenu: {fileID: 0}
   player: {fileID: 0}
   physics: {fileID: 8986213089048827214}
   animator: {fileID: 8986213089048827212}

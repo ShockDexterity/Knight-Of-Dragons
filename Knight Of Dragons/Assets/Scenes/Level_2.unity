@@ -838,7 +838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paused: 0
   filter: {fileID: 0}
-  text: {fileID: 0}
+  texts: []
   pauseEffect: {fileID: 0}
   mainMusic: {fileID: 0}
 --- !u!1 &570952554
@@ -4565,7 +4565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6134861394488319415, guid: 3251842289c6b894da193cd24cdcb2d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 6134861394488319415, guid: 3251842289c6b894da193cd24cdcb2d6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16612,6 +16612,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c7c0078da6c0844fa5862f12e37c323, type: 3}
+--- !u!114 &1665725303 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3796401368776426461, guid: 9c7c0078da6c0844fa5862f12e37c323, type: 3}
+  m_PrefabInstance: {fileID: 1665725302}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d07d2e8cda63db4d88020f5aec468a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1696786752
 GameObject:
   m_ObjectHideFlags: 0
@@ -17883,13 +17894,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990015388}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 62.5, y: 101, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!114 &1990015392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18274,6 +18285,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5423870523870755676, guid: a105d7e9017587d47b58fffd154c1b01, type: 3}
+      propertyPath: signText
+      value: 
+      objectReference: {fileID: 1665725303}
     - target: {fileID: 5423870523870755677, guid: a105d7e9017587d47b58fffd154c1b01, type: 3}
       propertyPath: m_Name
       value: switch

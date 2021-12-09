@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ArcherController : MonoBehaviour
 {
+    public Enemy enemy;
     public PauseMenu pauseMenu;
     public GameObject player;
     private float playerX;
@@ -36,6 +37,7 @@ public class ArcherController : MonoBehaviour
     {
         pauseMenu = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PauseMenu>();
         player = GameObject.FindGameObjectWithTag("Player");
+        if (enemy == null) { enemy = this.GetComponent<Enemy>(); }
         if (physics == null) { physics = this.GetComponent<Rigidbody2D>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
 
@@ -51,7 +53,7 @@ public class ArcherController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!pauseMenu.paused)
+        if (!pauseMenu.paused || !enemy.alive)
         {
             if (!seesPlayer)
             {

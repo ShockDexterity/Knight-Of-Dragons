@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 public class Enemy : MonoBehaviour
 {
     public GameObject coin;
+    public GameObject potion;
     public Animator animator;
     public SpriteRenderer spriteRenderer;
-    public Vector3 coinSpawnPoint;
 
     private float center;
     private int health;
-    private bool alive;
+    public bool alive;
     private float deathTime;
     private float deathDelay;
     private bool lootDropped;
@@ -77,11 +77,10 @@ public class Enemy : MonoBehaviour
         {
             alive = false;
             deathTime = timeHurt;
-            if (!lootDropped) { DropLoot(); }
             animator.SetTrigger("Died");
-
             int r = Random.Range(0, 5);
-            if (r == 4) { GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().Heal(4); }
+            if (!lootDropped) { DropLoot(); }
+            if (r == 4) { DropPot(); }
         }
         else { this.GetComponent<SpriteRenderer>().color = Color.red; }
     }
@@ -96,8 +95,23 @@ public class Enemy : MonoBehaviour
         var yPos = this.transform.position.y - center + coinCenter;
         var zPos = this.transform.position.z;
 
-        coinSpawnPoint = new Vector3(xPos, yPos, zPos);
+        var coinSpawnPoint = new Vector3(xPos, yPos, zPos);
 
         Instantiate(coin, coinSpawnPoint, Quaternion.identity);
+    }
+
+    private void DropPot()
+    {
+        lootDropped = true;
+        BoxCollider2D potionCollider = potion.GetComponent<BoxCollider2D>();
+        var potionCenter = potionCollider.size.y / 2;
+
+        var xPos = this.transform.position.x;
+        var yPos = this.transform.position.y - center + potionCenter;
+        var zPos = this.transform.position.z;
+
+        var potionSpawnPoint = new Vector3(xPos, yPos, zPos);
+
+        Instantiate(potion, potionSpawnPoint, Quaternion.identity);
     }
 }//end class Enemy
