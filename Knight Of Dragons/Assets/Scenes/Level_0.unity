@@ -393,7 +393,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paused: 0
   filter: {fileID: 0}
-  text: {fileID: 0}
+  texts: []
+  keys: []
   pauseEffect: {fileID: 0}
   mainMusic: {fileID: 0}
 --- !u!82 &422381413

@@ -38,6 +38,7 @@ public class BossDash : MonoBehaviour
 
     public void Dash(bool left)
     {
+        timeAttacked = Time.time;
         inDash = true;
         animator.SetTrigger("Dash");
         dashSpeed = (!left) ? 7f : -7f;

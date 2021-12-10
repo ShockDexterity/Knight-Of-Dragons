@@ -9,9 +9,11 @@ public class SpearmenAttack : MonoBehaviour
     public Transform attackPoint;
     public LayerMask playerLayer;
     public float attackRange;
-    private float attackDelay;
     private float timeAttacked;
     private int damage;
+
+    private float hitDelay;
+    private bool inAttack;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +21,7 @@ public class SpearmenAttack : MonoBehaviour
         animator = this.GetComponent<Animator>();
         spearmenController = this.GetComponent<SpearmenController>();
 
-        attackDelay = 0.817f;
+        hitDelay = 6f / 11f;
 
         damage = 2;
     }
@@ -27,23 +29,26 @@ public class SpearmenAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!spearmenController.enabled && Time.time >= timeAttacked + attackDelay)
+        if (inAttack)
         {
-            spearmenController.enabled = true;
+            if (Time.time > (timeAttacked + hitDelay))
+            {
+                inAttack = false;
+                Collider2D[] players = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
+                foreach (var player in players)
+                {
+                    player.GetComponent<Player>().TakeDamage(damage);
+                }
+            }
         }
     }
 
     public void Attack()
     {
-        spearmenController.enabled = false;
         timeAttacked = Time.time;
         animator.SetTrigger("Attacking");
 
-        Collider2D[] players = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
-        foreach (var player in players)
-        {
-            player.GetComponent<Player>().TakeDamage(damage);
-        }
+        inAttack = true;
     }
 
     private void OnDrawGizmosSelected()

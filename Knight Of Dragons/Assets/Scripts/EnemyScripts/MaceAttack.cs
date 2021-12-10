@@ -10,9 +10,11 @@ public class MaceAttack : MonoBehaviour
     public LayerMask playerLayer;
 
     public float attackRange;
-    private float attackDelay;
     private float timeAttacked;
     private int damage;
+
+    private float hitDelay;
+    private bool inAttack;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +22,7 @@ public class MaceAttack : MonoBehaviour
         if (animator == null) { animator = this.GetComponent<Animator>(); }
         if (maceController == null) { maceController = this.GetComponent<MaceController>(); }
 
-        attackDelay = 15f / 11f;
+        hitDelay = 9f / 11f;
 
         damage = 2;
     }//end Start()
@@ -28,23 +30,25 @@ public class MaceAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!maceController.enabled && Time.time >= (timeAttacked + attackDelay))
+        if (inAttack)
         {
-            maceController.enabled = true;
+            if (Time.time > (timeAttacked + hitDelay))
+            {
+                inAttack = false;
+                Collider2D[] players = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
+                foreach (var player in players)
+                {
+                    player.GetComponent<Player>().TakeDamage(damage);
+                }
+            }
         }
     }//end Update()
 
     public void Attack()
     {
-        maceController.enabled = false;
         timeAttacked = Time.time;
         animator.SetTrigger("Attacking");
-
-        Collider2D[] players = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
-        foreach (var player in players)
-        {
-            player.GetComponent<Player>().TakeDamage(damage);
-        }
+        inAttack = true;
     }//end Attack()
 
     private void OnDrawGizmosSelected()

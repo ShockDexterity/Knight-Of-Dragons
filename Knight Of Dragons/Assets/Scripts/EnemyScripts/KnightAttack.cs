@@ -9,9 +9,10 @@ public class KnightAttack : MonoBehaviour
     public Transform attackPoint;
     public LayerMask playerLayer;
     public float attackRange;
-    private float attackDelay;
     private float timeAttacked;
     private int damage;
+    private float hitDelay;
+    private bool inAttack;
 
     // Start is called before the first frame update
     void Start()
@@ -20,30 +21,34 @@ public class KnightAttack : MonoBehaviour
         if (knightController == null) { knightController = this.GetComponent<KnightController>(); }
 
         attackRange = 0.5f;
-        attackDelay = 1.182f;
+        hitDelay = 6f / 11f;
         damage = 2;
+        inAttack = false;
     }//end Start()
 
     // Update is called once per frame
     void Update()
     {
-        if (!knightController.enabled && Time.time > (timeAttacked + attackDelay))
+        if (inAttack)
         {
-            knightController.enabled = true;
+            if (Time.time > (timeAttacked + hitDelay))
+            {
+                inAttack = false;
+                Collider2D[] players = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
+                foreach (var player in players)
+                {
+                    player.GetComponent<Player>().TakeDamage(damage);
+                }
+            }
         }
     }//end Update()
 
     public void Attack()
     {
-        knightController.enabled = false;
         timeAttacked = Time.time;
         animator.SetTrigger("Attacking");
 
-        Collider2D[] players = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
-        foreach (var player in players)
-        {
-            player.GetComponent<Player>().TakeDamage(damage);
-        }
+        inAttack = true;
     }//end Attack()
 
     private void OnDrawGizmosSelected()
