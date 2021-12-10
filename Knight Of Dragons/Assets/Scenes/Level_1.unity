@@ -2972,6 +2972,7 @@ MonoBehaviour:
   paused: 0
   filter: {fileID: 0}
   texts: []
+  keys: []
   pauseEffect: {fileID: 0}
   mainMusic: {fileID: 0}
 --- !u!1001 &381868327
@@ -3865,6 +3866,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 624356089, guid: 9c7c0078da6c0844fa5862f12e37c323, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -321
+      objectReference: {fileID: 0}
     - target: {fileID: 2086018777, guid: 9c7c0078da6c0844fa5862f12e37c323, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -3872,6 +3877,10 @@ PrefabInstance:
     - target: {fileID: 2086018777, guid: 9c7c0078da6c0844fa5862f12e37c323, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156951197744718326, guid: 9c7c0078da6c0844fa5862f12e37c323, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -321
       objectReference: {fileID: 0}
     - target: {fileID: 7208956980323898328, guid: 9c7c0078da6c0844fa5862f12e37c323, type: 3}
       propertyPath: m_Camera
@@ -3964,6 +3973,10 @@ PrefabInstance:
     - target: {fileID: 7208956980323898333, guid: 9c7c0078da6c0844fa5862f12e37c323, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208956980798559275, guid: 9c7c0078da6c0844fa5862f12e37c323, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -228
       objectReference: {fileID: 0}
     - target: {fileID: 7878693074988662561, guid: 9c7c0078da6c0844fa5862f12e37c323, type: 3}
       propertyPath: m_AnchorMax.x
