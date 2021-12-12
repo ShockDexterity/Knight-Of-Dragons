@@ -23,6 +23,9 @@ public class Interactable : MonoBehaviour
         var z = this.transform.position.z;
         var pos = new Vector3(x, y, z);
         var q = Quaternion.identity;
+
+        var chest = this.GetComponent<TreasureChest>();
+
         if (!used && collision.gameObject.tag == "Player")
         {
             spriteRenderer.color = new Vector4(0, 0.5f, 1, 1);
@@ -30,11 +33,13 @@ public class Interactable : MonoBehaviour
         if (indicator != null)
         {
             Destroy(indicator);
-            indicator = Instantiate(prefab, pos, q);
+            if (chest != null && !chest.looted) { indicator = Instantiate(prefab, pos, q); }
+            else { indicator = Instantiate(prefab, pos, q); }
         }
         else
         {
-            indicator = Instantiate(prefab, pos, q);
+            if (chest != null && !chest.looted) { indicator = Instantiate(prefab, pos, q); }
+            else { indicator = Instantiate(prefab, pos, q); }
         }
     }//end OnTriggerEnter2D()
 

@@ -164,7 +164,7 @@ public class SpearmenController : MonoBehaviour
                 dirX = -1;
             }
         }
-        this.physics.velocity = vel * dirX;
+        this.physics.velocity = new Vector2(vel.x * dirX, this.physics.velocity.y);
 
         idle = (Mathf.Abs(physics.velocity.x) < 0.01f) ? true : false;
         animator.SetBool("Idle", idle);

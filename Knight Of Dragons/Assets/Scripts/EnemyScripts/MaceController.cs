@@ -160,7 +160,7 @@ public class MaceController : MonoBehaviour
             }
             idle = false;
         }
-        this.physics.velocity = vel * dirX;
+        this.physics.velocity = new Vector2(vel.x * dirX, this.physics.velocity.y);
 
         animator.SetBool("Idle", idle);
     }//end SeekPlayer()

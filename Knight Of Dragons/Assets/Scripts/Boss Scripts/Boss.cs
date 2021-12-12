@@ -11,7 +11,8 @@ public class Boss : MonoBehaviour
 
     private float deathLength;
 
-    public const int maxHealth = 47 * 2;
+    private const float hc = (3f / 2f);
+    public const int maxHealth = (int)(47 * hc);
     public int health;
     public bool alive;
     private bool underAttack;
@@ -49,7 +50,7 @@ public class Boss : MonoBehaviour
         {
             health -= incomingDamage;
             if (health < 0) { health = 0; }
-            GameObject.Find("BossHealth").GetComponent<BossBar>().UpdateHealth(health / 2);
+            GameObject.Find("BossHealth").GetComponent<BossBar>().UpdateHealth((int)(health / hc));
         }
 
         if (alive && health < 1)

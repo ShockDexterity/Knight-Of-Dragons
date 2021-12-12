@@ -9,7 +9,7 @@ public class TreasureChest : MonoBehaviour
     private float lootDelay;            // How long the player has to wait to loot it
     private float timeLootable;         // When the player can loot the chest
     private bool opened;                // Has the chest been opened?
-    private bool looted;                // Has the chest been looted?
+    public bool looted;                // Has the chest been looted?
     private bool lootable;              // Can the player loot the chest?
 
     public GameObject[] possibleLoot;   // All possible loot options

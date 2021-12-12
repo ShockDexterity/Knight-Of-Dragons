@@ -11,11 +11,13 @@ public class BossMelee : MonoBehaviour
     public float attackRange;
     private float meleeDelay;
     private float timeAttacked;
+    public Boss boss;
     // private int damage;
 
     // Start is called before the first frame update
     void Start()
     {
+        if (boss == null) { boss = this.GetComponent<Boss>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
         if (bossController == null) { bossController = this.GetComponent<BossController>(); }
 
@@ -42,7 +44,7 @@ public class BossMelee : MonoBehaviour
         Collider2D[] players = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
         foreach (var player in players)
         {
-            player.GetComponent<Player>().TakeDamage(damage);
+            if (boss.alive) { player.GetComponent<Player>().TakeDamage(damage); }
         }
     }
 

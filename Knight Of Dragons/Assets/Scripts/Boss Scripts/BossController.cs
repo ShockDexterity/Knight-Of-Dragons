@@ -78,7 +78,7 @@ public class BossController : MonoBehaviour
                         case 1:
                             bossDash.Dash(left: facingLeft);
                             Debug.Log("Dash");
-                            nextChoice = Time.time + 1f;
+                            nextChoice = Time.time + (13f / 11f);
                             break;
 
                         case 2:
