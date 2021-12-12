@@ -31,7 +31,7 @@ public class PlayerMelee : MonoBehaviour
         nextAttack = 0f;
         attackRate = 0.6f;
         attackRange = 0.5f;
-        attackDelay = 14f / 14f;
+        attackDelay = 14f / 20f;
         soundDelay = 6f / 14f;
         playedAudio = true;
         damage = 2;
@@ -53,7 +53,6 @@ public class PlayerMelee : MonoBehaviour
                     nextAttack = Time.time + attackRate;
                     timeAttacked = Time.time;
                 }
-
             }
             else if (Time.time >= (timeAttacked + attackDelay))
             {

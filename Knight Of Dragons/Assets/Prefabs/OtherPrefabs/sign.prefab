@@ -138,5 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff828ee1c3ffda2458df3c1b278a8bcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefab: {fileID: 1173435940535774948, guid: 9ea6edeee23a9254aba71cc3b328e1d5, type: 3}
+  indicator: {fileID: 0}
   spriteRenderer: {fileID: 3577596619426501336}
   used: 0
