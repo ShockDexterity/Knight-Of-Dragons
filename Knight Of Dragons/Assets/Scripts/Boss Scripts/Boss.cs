@@ -40,8 +40,8 @@ public class Boss : MonoBehaviour
         }
         if (!alive)
         {
-            // if (Time.time >= (deathTime + deathLength)) { SceneManager.LoadScene("Outro"); }
-            if (Time.time >= (deathTime + deathLength)) { SceneManager.LoadScene(5); }
+            if (Time.time >= (deathTime + deathLength)) { SceneManager.LoadScene("Outro"); }
+            // if (Time.time >= (deathTime + deathLength)) { SceneManager.LoadScene(5); }
         }
     }
 
