@@ -17,7 +17,6 @@ public class BossController : MonoBehaviour
     private bool seesPlayer;
     private int dirX;
     private int choice;
-    private const float choiceDelay = 5f;
     private float nextChoice;
 
     public Boss boss;
@@ -67,29 +66,29 @@ public class BossController : MonoBehaviour
                 if (!inChoice && Time.time >= nextChoice)
                 {
                     inChoice = true;
-                    choice = Random.Range(0, 8);
+                    choice = Random.Range(0, 5);
                     switch (choice)
                     {
                         case 0:
                             bossBlock.Block();
                             Debug.Log("Block");
-                            nextChoice = Time.time + choiceDelay;
+                            nextChoice = Time.time + 1f;
                             break;
 
                         case 1:
                             bossDash.Dash(left: facingLeft);
                             Debug.Log("Dash");
-                            nextChoice = Time.time + choiceDelay;
+                            nextChoice = Time.time + 1f;
                             break;
 
                         case 2:
                             bossMelee.MeleeAttack(damage: 4);
                             Debug.Log("Melee");
-                            nextChoice = Time.time + (choiceDelay / 3f);
+                            nextChoice = Time.time + 1f;
                             break;
 
                         default:
-                            nextChoice = Time.time + (choiceDelay / 3f);
+                            nextChoice = Time.time + 1f;
                             break;
                     }
                 }
