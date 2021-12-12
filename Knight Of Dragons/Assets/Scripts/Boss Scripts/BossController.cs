@@ -50,7 +50,6 @@ public class BossController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Debug.Log(facingLeft);
         if (boss.alive)
         {
             if (!seesPlayer)
@@ -71,19 +70,16 @@ public class BossController : MonoBehaviour
                     {
                         case 0:
                             bossBlock.Block();
-                            Debug.Log("Block");
                             nextChoice = Time.time + 1f;
                             break;
 
                         case 1:
                             bossDash.Dash(left: facingLeft);
-                            Debug.Log("Dash");
                             nextChoice = Time.time + (13f / 11f);
                             break;
 
                         case 2:
                             bossMelee.MeleeAttack(damage: 4);
-                            Debug.Log("Melee");
                             nextChoice = Time.time + 1f;
                             break;
 
@@ -97,6 +93,10 @@ public class BossController : MonoBehaviour
                     inChoice = false;
                 }
             }
+        }
+        else
+        {
+            this.physics.velocity = Vector2.zero;
         }
     }
 

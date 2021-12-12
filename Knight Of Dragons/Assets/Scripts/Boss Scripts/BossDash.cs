@@ -10,10 +10,12 @@ public class BossDash : MonoBehaviour
     private float dashLength;
     private float dashSpeed;
     public bool inDash;
+    public Boss boss;
 
     // Start is called before the first frame update
     void Start()
     {
+        if (boss == null) { boss = this.GetComponent<Boss>(); }
         if (animator == null) { animator = this.GetComponent<Animator>(); }
         if (bossController == null) { bossController = this.GetComponent<BossController>(); }
 
@@ -25,6 +27,7 @@ public class BossDash : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (!boss.alive) { dashSpeed = 0f; }
         if (inDash)
         {
             this.GetComponent<Rigidbody2D>().velocity = new Vector2(dashSpeed, 0);
