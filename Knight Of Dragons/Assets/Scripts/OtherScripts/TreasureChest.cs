@@ -36,6 +36,7 @@ public class TreasureChest : MonoBehaviour
 
         lootDelay = 1.017f;
 
+        looted = false;
         lootable = false;
     }
 

@@ -18,28 +18,38 @@ public class Interactable : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        var x = this.transform.position.x;
-        var y = this.transform.position.y + 0.5f;
-        var z = this.transform.position.z;
-        var pos = new Vector3(x, y, z);
-        var q = Quaternion.identity;
+        if (collision.gameObject.tag == "Player")
+        {
+            var x = this.transform.position.x;
+            var y = this.transform.position.y + 0.5f;
+            var z = this.transform.position.z;
+            var pos = new Vector3(x, y, z);
+            var q = Quaternion.identity;
 
-        var chest = this.GetComponent<TreasureChest>();
+            var chest = this.GetComponent<TreasureChest>();
+            var _switch = this.GetComponent<Switch>();
 
-        if (!used && collision.gameObject.tag == "Player")
-        {
-            spriteRenderer.color = new Vector4(0, 0.5f, 1, 1);
-        }
-        if (indicator != null)
-        {
-            Destroy(indicator);
-            if (chest != null && !chest.looted) { indicator = Instantiate(prefab, pos, q); }
-            else { indicator = Instantiate(prefab, pos, q); }
-        }
-        else
-        {
-            if (chest != null && !chest.looted) { indicator = Instantiate(prefab, pos, q); }
-            else { indicator = Instantiate(prefab, pos, q); }
+            if (!used)
+            {
+                spriteRenderer.color = new Vector4(0, 0.5f, 1, 1);
+            }
+            if (indicator != null)
+            {
+                Destroy(indicator);
+            }
+            if (chest != null)
+            {
+                if (!chest.looted) { indicator = Instantiate(prefab, pos, q); }
+            }
+            else if (_switch != null)
+            {
+                if (!_switch.toggled) { indicator = Instantiate(prefab, pos, q); }
+            }
+            else
+            {
+                indicator = Instantiate(prefab, pos, q);
+            }
+
         }
     }//end OnTriggerEnter2D()
 
@@ -48,10 +58,10 @@ public class Interactable : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             spriteRenderer.color = Color.white;
-        }
-        if (indicator != null)
-        {
-            Destroy(indicator);
+            if (indicator != null)
+            {
+                Destroy(indicator);
+            }
         }
     }//end OnTriggerExit2D()
 }
